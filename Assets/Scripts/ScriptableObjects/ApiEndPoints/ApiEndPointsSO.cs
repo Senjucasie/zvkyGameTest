@@ -1,4 +1,3 @@
-using Microsoft.AppCenter.Unity;
 using UnityEngine;
 
 public enum ServerUri

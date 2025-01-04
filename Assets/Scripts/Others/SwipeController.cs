@@ -6,11 +6,9 @@ public class SwipeController : MonoBehaviour
     [SerializeField] int maxPage;
     int currentPage;
     Vector3 initialPosition;
-    Vector3 targetPos;
     [SerializeField] Vector3 pageSteps;
     [SerializeField] RectTransform levelPagesRect;
     [SerializeField] float tweenTime;
-    [SerializeField] LeanTweenType tweenType;
     [SerializeField] GameObject infoPanel;
     [SerializeField] Button previousBtn, nextBtn;
 
@@ -24,27 +22,22 @@ public class SwipeController : MonoBehaviour
     {
         currentPage = 1;
         levelPagesRect.localPosition = initialPosition;
-        targetPos = levelPagesRect.localPosition;
-        UpdateArrowButton();
+    
     }
     public void Next()
     {
         if (currentPage < maxPage)
         {
             Audiomanager.Instance.PlayUiSfx(SFX.Button_Click);
-            currentPage++;
-            targetPos += pageSteps;
-            movePage();
+
         }
     }
-
     public void Previous()
     {
         if (currentPage > 1)
         {
             Audiomanager.Instance.PlayUiSfx(SFX.Button_Click);
             currentPage--;
-            targetPos -= pageSteps;
             movePage();
         }
 
@@ -59,7 +52,6 @@ public class SwipeController : MonoBehaviour
 
     void movePage()
     {
-        levelPagesRect.LeanMoveLocal(targetPos, tweenTime).setEase(tweenType);
         UpdateArrowButton();
     }
 

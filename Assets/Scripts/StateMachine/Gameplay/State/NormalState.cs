@@ -195,7 +195,6 @@ namespace FSM.GamePlay.State
 
         private IEnumerator ShowWinCoroutine(bool normalpayline, bool scatterpayline)
         {
-            bool hasShownPaylineOnce = false;
 
             _paylineController.WinTint.SetActive(true);
             if (_paylineController.CurrentPayLineState == PaylineController.PayLineState.NotShowing)
@@ -205,14 +204,9 @@ namespace FSM.GamePlay.State
             }
             if (normalpayline)
             {
-                
-
-                hasShownPaylineOnce = true;
                 _paylineController.ShowTotalWinAmountVisuals(_currentSpinCreditWon);
                 yield return _gamePlayStateMachine.StartCoroutine(_paylineController.ShowNormalPayline());
                 yield return CelebrationManager.Instance.ShowCelebrationPopupAndWait(_currentSpinCreditWon);
-
-               
             }
            
             if (scatterpayline)
