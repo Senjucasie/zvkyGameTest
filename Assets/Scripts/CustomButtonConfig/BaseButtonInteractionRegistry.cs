@@ -16,9 +16,6 @@ public class BaseButtonInteractionRegistry : MonoBehaviour
 
     [SerializeField] internal List<BaseButtonBehaviour> normalData;
     [SerializeField] internal List<BaseButtonBehaviour> scatterData;
-    [SerializeField] internal List<BaseButtonBehaviour> autoData;
-    [SerializeField] internal List<BaseButtonBehaviour> bonusData;
-    [SerializeField] internal List<BaseButtonBehaviour> reSpinBonusData;
     [SerializeField] internal List<BaseButtonBehaviour> stateSwitchingData;
 
     private void Awake()

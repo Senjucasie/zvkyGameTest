@@ -20,7 +20,6 @@ public class EventManager
     public static Action<double> BalanceAmountDeductionEvent;
     public static Action SetInitialBalanceEvent;
     public static Action<double> OnUpdateCurrentBalanceEvent;
-    public static Action OnUpdateWheelBonusBalanceEvent;
     public static Action UpdateCreditValueEvent;
     public static Action<int> SetUpdatedResumeBet;
 
@@ -36,17 +35,7 @@ public class EventManager
     public static Action SpinResponseEvent;
     public static Action OnSpinCompleteEvent;
 
-    // Bonus Actions
-    public static Action OnBonusPaylineStopped;
-    public static Action<Action> BonusGameStartEvent;
-    public static Action<GamePlayStateMachine> BonusStartEvent;
-    public static Action<Action> BonusViaBonusStateEvent;
-    public static Action BonusGameEndEvent;
-    public static Action BonusSpinGameEndEvent;
-    public static Action BonusStateEnterEvent;
 
-    // Pick Bonus Actions
-    public static Action<PickBonusSymbol> PickBonusPrizePickedEvent;
 
     // Free Spin Actions
     public static Action OnScatterPaylineStopped;
@@ -57,19 +46,10 @@ public class EventManager
     public static Action BonusOnLoginEvent;
     public static Action<int> OnFreeSpinPlayed;
 
-    // Re Spin Actions
-    public static Action<int> OnReSpinPlayed;
-
-
-    // Auto Spin Actions
-    public static Action<int> OnAutoSpinPlayEvent;
-    public static Action<int> OnAutoSpinPlayedEvent;
-    public static Action OnAutoSpinStopEvent;
 
     // State Switching
     public static Action NormalStateStartedEvent;
     public static Action ScatterStateStartedEvent;
-    public static Action AutoStateStartedEvent;
     #endregion
 
     public static void InvokeSwitchBaseButtonState(List<BaseButtonBehaviour> baseButtonBehaviour, bool setbasebuttoninteractivity = true)
@@ -84,7 +64,7 @@ public class EventManager
 
     public static void InvokeNormalStateStartedEvent() => NormalStateStartedEvent?.Invoke();
     public static void InvokeScatterStateStartedEvent() => ScatterStateStartedEvent?.Invoke();
-    public static void InvokeAutoStateStartedEvent() => AutoStateStartedEvent?.Invoke();
+
 
     public static void InvokeUpdateCreditValue()
     {
@@ -99,11 +79,6 @@ public class EventManager
     public static void InvokeUpdateBalance(double amount)
     {
         OnUpdateCurrentBalanceEvent(amount);
-    }
-
-    public static void InvokeUpdateWheelBonusBalance()
-    {
-        OnUpdateWheelBonusBalanceEvent?.Invoke();
     }
 
     public static void InvokeSetPlayerData(double current_Bet)
@@ -121,21 +96,7 @@ public class EventManager
         RequestSpinDataEvent();
     }
 
-    public static void InvokeOnAutoSpinPlay(int count)
-    {
-        OnAutoSpinPlayEvent(count);
-    }
-
-
-    public static void InvokeOnAutoSpinPlayed(int count)
-    {
-        OnAutoSpinPlayedEvent?.Invoke(count);
-    }
-
-    public static void InvokeOnAutoSpinStop()
-    {
-        OnAutoSpinStopEvent();
-    }
+  
 
     public static void InvokeDisableSlamStop()
     {
@@ -177,10 +138,7 @@ public class EventManager
         OnScatterPaylineStopped();
     }
 
-    public static void InvokeBonusPaylineStopped()
-    {
-        OnBonusPaylineStopped();
-    }
+  
     public static void InvokeOnClickResetData()
     {
         OnClickResetDataEvent();
@@ -194,20 +152,6 @@ public class EventManager
         OnFreeSpinIntroEnded?.Invoke();
     }
 
-    public static void InvokeBonusGameStart(Action callBack)
-    {
-        BonusGameStartEvent(callBack);
-    }
-
-    public static void InvokeBonusGame(GamePlayStateMachine gamePlayStateMachine)
-    {
-        BonusStartEvent(gamePlayStateMachine);
-    }
-
-    public static void InvokeBonusViaBonusState(Action callback)
-    {
-        BonusViaBonusStateEvent(callback);
-    }
     public static void InvokeSpinResponse()
     {
         SpinResponseEvent();
@@ -236,39 +180,24 @@ public class EventManager
     {
         OnSpinCompleteEvent();
     }
-    public static void InvokeBonusGameEnd()
-    {
-        BonusGameEndEvent();
-    }
+
 
     public static void InvokeFreeSpinGameEnd()
     {
         FreeSpinGameEndEvent();
     }
-    public static void InvokeBonusSpinGameEnd()
-    {
-        BonusSpinGameEndEvent();
-    }
+
     public static void InvokeFreeSpinGameStart()
     {
         FreeSpinGameStartEvent();
     }
-    public static void InvokePickBonusPrizePicked(PickBonusSymbol symbol)
-    {
-        PickBonusPrizePickedEvent(symbol);
-    }
+
 
     public static void InvokeFreeSpinPlayed(int currentFreeSpinCount)
     {
         OnFreeSpinPlayed(currentFreeSpinCount);
     }
 
-    public static void InvokeReSpinPlayed(int currentReSpinCount)
-    {
-        OnReSpinPlayed(currentReSpinCount);
-    }
-
-    public static void InvokeBonusStateEvent() => BonusStateEnterEvent?.Invoke();
 
 
 }

@@ -65,25 +65,12 @@ public class PaylineController : MonoBehaviour
 
     public IEnumerator ShowNormalPayline()
     {
-        GameFeaturesManager gameFeaturesManager = GameFeaturesManager.Instance;
-        if (gameFeaturesManager.HasStickyWild)
-        {
-            ReelManager.Instance.StopAnimatingMidSymbol();
-            gameFeaturesManager.StickyWildFeature.ShowStickyWild();
-        }
-
-        // TODO: have to check the cases of expanding wild here for showing Win
         for (int currentpayline = 0; currentpayline < NormalPayline.Count; currentpayline++)
         {
             AnimatePaylineAndSymbols(PaylineType.Normal, currentpayline);
             yield return WaitTimeForPayLine(PaylineType.Normal, CurrentPayLineState, currentpayline);
             StopWinAnimation();
             HidePaylineVisual(NormalPayline[currentpayline].id);
-        }
-
-        if (gameFeaturesManager.HasStickyWild)
-        {
-            gameFeaturesManager.StickyWildFeature.HideStickyWild();
         }
     }
 
@@ -117,43 +104,6 @@ public class PaylineController : MonoBehaviour
         yield return new WaitForSeconds(waittime);
         StopWinAnimation();
         EventManager.InvokeScatterPaylineStopped();
-    }
-    public IEnumerator ShowBonusPayline()
-    {
-        EventManager.InvokeSwitchBaseButtonState(BaseButtonInteractionRegistry.Instance.stateSwitchingData, false);
-
-        Symbol bonusSym = null;
-
-        for (int i = 0; i < _bonusPayline.positions.GetLength(0); i++)
-        {
-            int reel = _bonusPayline.positions[i, 0];
-            int bonussymbolindex = _bonusPayline.positions[i, 1];
-            bonusSym = ReelManager.Instance.Reels[reel].OutcomeSymbols[bonussymbolindex];
-            bonusSym.ShowWin(CurrentPayLineState);
-        }
-        Audiomanager.Instance.PlaySfx(bonusSym._audioClip);
-
-        yield return new WaitForSeconds(ReelManager.Instance.SystemSetting.ShowPaylineDuration);
-
-        WinTint.SetActive(false);
-        StopWinAnimation();
-        EventManager.InvokeBonusPaylineStopped();
-        // EventManager.InvokeBonusStateEvent(); // it's needed for button interactivity and state switching, TODO: We need to switch to bonus staate at very start
-    }
-
-    public void PlayPreExpandedWild()
-    {
-        GameFeaturesManager.Instance.PreExpandingWildFeature.PlayPreExpandedWild(CurrentPayLineState);
-    }
-
-    public void StopPreExpandedWild()
-    {
-        GameFeaturesManager.Instance.PreExpandingWildFeature.StopPreExpandedWild();
-    }
-
-    public void PlayExpandingWild()
-    {
-        GameFeaturesManager.Instance.ExpandingWildFeature.PlayExpandingWild();
     }
 
     private void AnimatePaylineAndSymbols(PaylineType paylineType, int currentpayline)

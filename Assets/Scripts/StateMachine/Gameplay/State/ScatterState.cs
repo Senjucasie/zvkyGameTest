@@ -61,7 +61,6 @@ namespace FSM.GamePlay.State
             SlotGameEngineStarter.IsSlamStop = false;
             _gamePlayStateMachine.StopAllCoroutines();
             _reelManager._currentSpinState = SpinState.Idle;
-            _reelManager.ClearExpandingWild();
 
             //change this to the playline controller rightnow using the enum from the controller
             _paylineController.CurrentPayLineState = PaylineController.PayLineState.NotShowing;
@@ -102,8 +101,6 @@ namespace FSM.GamePlay.State
         {
             yield return new WaitForSeconds(delay);
             _showReelRoutine = null;
-            if (GameFeaturesManager.Instance.HasPreExpandedWild)
-                _reelManager.SetPreExpandedWild();
             _reelManager.SetOutcomeSymbols();
             _gamePlayStateMachine.StartCoroutine(StopReels(_reelManager.ReelRotationOffset));
         }
@@ -153,13 +150,11 @@ namespace FSM.GamePlay.State
             GameApiManager.Instance.SendSpinCompleteRequest();
 
             bool normalpayline = HasNormalPayLine();
-
-            bool featurePayline = false;
-            if (GameFeaturesManager.Instance.HasExpandingWild)
-                featurePayline = HasFeaturePayline();
-
-            if (normalpayline || featurePayline)
-                _gamePlayStateMachine.StartCoroutine(ShowWinCoroutine(normalpayline, featurePayline));
+            if (normalpayline)
+            {
+                _gamePlayStateMachine.StartCoroutine(ShowWinCoroutine(normalpayline));
+            }
+               
             else
             {
                 if (_remainingFreeSpin > 0)
@@ -190,58 +185,19 @@ namespace FSM.GamePlay.State
                 return false;
         }
 
-        private bool HasFeaturePayline()
-        {
-            Payline[] paylineData = GameApiManager.Instance.ApiData.GetFeaturePaylineData();
-            if (paylineData == null) return false;
-
-            int paylineCount = paylineData.Length;
-
-            if (paylineCount > 0)
-            {
-                _paylineController.GeneratePayline(PaylineType.Feature, paylineData, paylineCount);
-                SetTotalAmount(GameApiManager.Instance.ApiData.GetMainSpinCreditsWon());
-                EventManager.InvokeCheckWinCelebration(_currntFreeSpinAmount);
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
 
         private void SetTotalAmount(double amount) => _currntFreeSpinAmount = amount;
 
-        private IEnumerator ShowWinCoroutine(bool normalPayline, bool featurePayline)
+        private IEnumerator ShowWinCoroutine(bool normalPayline)
         {
-            bool hasShownPaylineOnce = false;
             _paylineController.WinTint.SetActive(true);
             _paylineController.CurrentPayLineState = PaylineController.PayLineState.FirstIteration;
 
             if (normalPayline)
             {
-                if (GameFeaturesManager.Instance.HasPreExpandedWild)
-                    _paylineController.PlayPreExpandedWild();
-
-                hasShownPaylineOnce = true;
                 _paylineController.ShowTotalWinAmountVisuals(_currntFreeSpinAmount);
                 yield return _gamePlayStateMachine.StartCoroutine(_paylineController.ShowNormalPayline());
                 yield return _gamePlayStateMachine.StartCoroutine(CelebrationManager.Instance.ShowCelebrationPopupAndWait(_currntFreeSpinAmount));
-
-                if (GameFeaturesManager.Instance.HasPreExpandedWild)
-                    _paylineController.StopPreExpandedWild();
-            }
-
-            if (featurePayline)
-            {
-                _reelManager.InstantiateExpandingWild();
-                _paylineController.PlayExpandingWild();
-
-                if (!hasShownPaylineOnce)
-                    _paylineController.ShowTotalWinAmountVisuals(_currntFreeSpinAmount);
-                yield return _gamePlayStateMachine.StartCoroutine(_paylineController.ShowFeaturePayline());
-                if (!hasShownPaylineOnce)
-                    yield return CelebrationManager.Instance.ShowCelebrationPopupAndWait(_currntFreeSpinAmount);
             }
 
             _paylineController.CurrentPayLineState = PaylineController.PayLineState.NotShowing;

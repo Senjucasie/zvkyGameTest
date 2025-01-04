@@ -142,37 +142,6 @@ public class ReelManager : MonoBehaviour
         #endregion
     }
 
-    public void SetPreExpandedWild()
-    {
-        GameFeaturesManager.Instance.PreExpandingWildFeature.SetPreExpandingWildProperty(reels);
-    }
-
-    public void SetExpandingWild()
-    {
-        GameFeaturesManager.Instance.ExpandingWildFeature.SetExpandingWildProperty(reels);
-    }
-
-    public void InstantiateExpandingWild()
-    {
-        int sortingOffset = 0;
-        foreach (Reel reel in reels)
-        {
-            if (reel.HasExpandingWild)
-            {
-                reel.InstantiateExpandingWild(sortingOffset);
-                sortingOffset++;
-            }
-        }
-    }
-
-    public void ClearExpandingWild()
-    {
-        foreach (Reel reel in reels)
-        {
-            reel.DestroyExapndingWilds();
-        }
-    }
-
     public void StopAnimatingMidSymbol()
     {
         int midRow = (ReelSetting.Rows - 1) / 2;

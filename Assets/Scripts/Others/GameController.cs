@@ -2,15 +2,6 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public static void ActiveBonusGame()
-    {
-        CommandQueue.AddAction((callback) =>
-            {
-                EventManager.InvokeBonusGameStart(callback);
-            }, 2f, 99, "BonusGameStart");
-        CoroutineStarter.Instance.StartCoroutine(CommandQueue.StartExecution());
-    }
-
 
     public static void ActiveFreeGame()
     {

@@ -13,8 +13,6 @@ public class GamePlayStateMachine : StateMachine
     #region states
     public State NormalGameState { get; private set; }
     public State ScatterGameState { get; private set; }
-    public State AutoPlayGameState { get; private set; }
-    public State BonusGameState { get; private set; }
     #endregion
 
     void OnEnable()
@@ -29,8 +27,6 @@ public class GamePlayStateMachine : StateMachine
     {
         NormalGameState = new NormalState(this);
         ScatterGameState = new ScatterState(this);
-        AutoPlayGameState = new AutoPlayState(this);
-        BonusGameState = new BonusState(this);
     }
 
     private void Start()

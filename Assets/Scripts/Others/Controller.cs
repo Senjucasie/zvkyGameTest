@@ -8,6 +8,8 @@ public class Controller : MonoBehaviour
 
     [SerializeField]private GamePlayStateMachine _gamePlayStateMachine;
 
+    public static Controller Instance;
+
     private void Awake()
     {
         Instance = this;
@@ -15,12 +17,9 @@ public class Controller : MonoBehaviour
     void OnEnable()
     {
         EventManager.FreeSpinOnLoginEvent += OnFreeSpinOnLogin;
-        EventManager.BonusOnLoginEvent += OnBonusOnLogin;
         EventManager.OnSpinClickedEvent += OnSpinClicked;
         EventManager.OnScatterPaylineStopped += OnScatterPaylineStopped;
-        EventManager.OnBonusPaylineStopped += OnBonusPaylineStopped; 
-        EventManager.OnAutoSpinPlayEvent += OnAutoPlayPressed;
-        EventManager.OnAutoSpinStopEvent += OnAutoPlayStopPressed;
+  
     }
 
 
@@ -43,19 +42,6 @@ public class Controller : MonoBehaviour
         GameController.ActiveFreeGame();
     }
 
-    public void OnBonusOnLogin()
-    {
-        EventManager.InvokeBonusStateEvent();
-        //GameController.ActiveBonusGame();
-    }
-
-    public void OnBonusPaylineStopped()
-    {
-        EventManager.InvokeBonusStateEvent();
-        //GameController.ActiveBonusGame();
-    }
-
-  
 
     public void OnFreeSpinPlayPressed()
     {
@@ -69,34 +55,7 @@ public class Controller : MonoBehaviour
             }
         }
     }
-    public void OnAutoPlayPressed(int autoSpinCount)
-    {
-        //if (currentGameState != GameStatesType.FreeSpin)
-        //{
-        //    if (autoSpinCount > 0) remainingAutoSpins = autoSpinCount;
-
-        //    if (CurrentSpinState == SpinStatesTypes.Idle)
-        //    {
-        //        if (remainingAutoSpins > 0)
-        //        {
-        //            Debug.Log("Individual Auto Spin Started!");
-        //            currentGameState = GameStatesType.AutoSpin;
-        //            Debug.Log("OnSpinAutoPlayPressed");
-        //            EventManager.SpinButton();
-        //            EconomyManager.OnUpdateCurrentBalance();
-        //            EventManager.OnAutoSpinPlayed();
-        //            this.remainingAutoSpins--;
-        //            Debug.Log("Individual Auto Spin Stopped!");
-        //        }
-        //        else
-        //        {
-        //            CurrentGameState = GameStatesType.NormalSpin;
-        //            EventManager.OnAutoSpinStop();
-        //            EventManager.SetNormalSpinData();
-        //        }
-        //    }
-        //}
-    }
+  
 
     public void OnAutoPlayStopPressed()
     {
@@ -142,19 +101,11 @@ public class Controller : MonoBehaviour
         }
     }
 
-
-    public static Controller Instance;
-
-
-
     void OnDisable()
     {
         EventManager.FreeSpinOnLoginEvent -= OnFreeSpinOnLogin;
-        EventManager.BonusOnLoginEvent -= OnBonusOnLogin;
         EventManager.OnSpinClickedEvent -= OnSpinClicked;
         EventManager.OnScatterPaylineStopped -= OnScatterPaylineStopped;
-        EventManager.OnBonusPaylineStopped -= OnBonusPaylineStopped;
-        EventManager.OnAutoSpinPlayEvent -= OnAutoPlayPressed;
-        EventManager.OnAutoSpinStopEvent -= OnAutoPlayStopPressed;
+
     }
 }

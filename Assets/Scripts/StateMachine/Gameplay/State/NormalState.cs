@@ -1,7 +1,7 @@
 using Spin.Api;
 using System.Collections;
 using UnityEngine;
-using static PaylineController;
+
 
 namespace FSM.GamePlay.State
 {
@@ -32,14 +32,9 @@ namespace FSM.GamePlay.State
             EventManager.SpinResponseEvent += OnSpinDataFetched;
             EventManager.SpinButtonClickedEvent += OnSpinClick;
             EventManager.OnFreeSpinIntroEnded += SwitchToScatterState;
-            EventManager.BonusStateEnterEvent += SwitchToBonusState;
             BottomUIPanel.SlamStopReelsEvent += OnSlamStop;
         }
 
-        private void SwitchToBonusState()
-        {
-            _gamePlayStateMachine.SwitchState(_gamePlayStateMachine.BonusGameState);
-        }
         private void SwitchToScatterState()
         {
             _gamePlayStateMachine.SwitchState(_gamePlayStateMachine.ScatterGameState);
@@ -66,7 +61,6 @@ namespace FSM.GamePlay.State
             SlotGameEngineStarter.IsSlamStop = false;
             _gamePlayStateMachine.StopAllCoroutines();
             _reelManager._currentSpinState = SpinState.Idle;
-            _reelManager.ClearExpandingWild();
 
             //change this to the playline controller rightnow using the enum from the controller
             _paylineController.CurrentPayLineState = PaylineController.PayLineState.NotShowing;
@@ -102,15 +96,6 @@ namespace FSM.GamePlay.State
         {
             yield return new WaitForSeconds(delay);
             _showReelRoutine = null;
-
-            // PRE EXPANDED WILD
-            if (GameFeaturesManager.Instance.HasPreExpandedWild)
-                _reelManager.SetPreExpandedWild();
-
-            // EXPANDING WILD
-            if (GameFeaturesManager.Instance.HasExpandingWild)
-                _reelManager.SetExpandingWild();
-
             _reelManager.SetReelsForAnticipation();
             _reelManager.SetOutcomeSymbols();
             _gamePlayStateMachine.StartCoroutine(StopReels(_reelManager.ReelRotationOffset, _reelManager.SystemSetting.AnticipationDuration));
@@ -168,16 +153,11 @@ namespace FSM.GamePlay.State
         private IEnumerator CheckPaylines()
         {
             bool normalpayline = HasNormalPayLine();
-
-            bool featurePayline = false;
-            if (GameFeaturesManager.Instance.HasExpandingWild)
-                featurePayline = HasFeaturePayline();
-
             bool scatterpayline = HasScatterPayline();
-            bool bonuspayline = HasBonusPayline();
 
-            if (normalpayline || featurePayline || scatterpayline || bonuspayline)
-                _gamePlayStateMachine.StartCoroutine(ShowWinCoroutine(normalpayline, scatterpayline, bonuspayline, featurePayline));
+
+            if (normalpayline || scatterpayline )
+                _gamePlayStateMachine.StartCoroutine(ShowWinCoroutine(normalpayline, scatterpayline));
 
             GameApiManager.Instance.SendSpinCompleteRequest();
 
@@ -199,26 +179,6 @@ namespace FSM.GamePlay.State
                 return false;
         }
 
-        private bool HasFeaturePayline()
-        {
-            Payline[] paylineData = GameApiManager.Instance.ApiData.GetFeaturePaylineData();
-            if (paylineData == null) return false;
-
-            int paylineCount = paylineData.Length;
-
-            if (paylineCount > 0)
-            {
-                _paylineController.GeneratePayline(PaylineType.Feature, paylineData, paylineCount);
-                SetTotalAmount(GameApiManager.Instance.ApiData.GetMainSpinCreditsWon());
-                EventManager.InvokeCheckWinCelebration(_currentSpinCreditWon);
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
         private void SetTotalAmount(double amount) => _currentSpinCreditWon = amount;
 
         private bool HasScatterPayline()
@@ -231,22 +191,9 @@ namespace FSM.GamePlay.State
             return true;
         }
 
-        private bool HasBonusPayline()
-        {
-            _paylineController._bonusPayline = null;
+   
 
-            Bonus bonusData = GameApiManager.Instance.ApiData.GetBonusData();
-            int bonusCount = bonusData.count;
-            if (bonusCount > 2 && bonusData.bonusTrigger)
-            {
-                _paylineController._bonusPayline = new(bonusData.position);
-                //EventManager.InvokeBonusSpinGameStart();
-                return true;
-            }
-            return false;
-        }
-
-        private IEnumerator ShowWinCoroutine(bool normalpayline, bool scatterpayline, bool bonuspayline, bool featurepayline)
+        private IEnumerator ShowWinCoroutine(bool normalpayline, bool scatterpayline)
         {
             bool hasShownPaylineOnce = false;
 
@@ -258,58 +205,33 @@ namespace FSM.GamePlay.State
             }
             if (normalpayline)
             {
-                if (GameFeaturesManager.Instance.HasPreExpandedWild)
-                    _paylineController.PlayPreExpandedWild();
+                
 
                 hasShownPaylineOnce = true;
                 _paylineController.ShowTotalWinAmountVisuals(_currentSpinCreditWon);
                 yield return _gamePlayStateMachine.StartCoroutine(_paylineController.ShowNormalPayline());
                 yield return CelebrationManager.Instance.ShowCelebrationPopupAndWait(_currentSpinCreditWon);
 
-                if (GameFeaturesManager.Instance.HasPreExpandedWild)
-                    _paylineController.StopPreExpandedWild();
+               
             }
-            if (featurepayline)
-            {
-                _reelManager.InstantiateExpandingWild();
-                _paylineController.PlayExpandingWild();
-
-                if (!hasShownPaylineOnce)
-                    _paylineController.ShowTotalWinAmountVisuals(_currentSpinCreditWon);
-                yield return _gamePlayStateMachine.StartCoroutine(_paylineController.ShowFeaturePayline());
-                if (!hasShownPaylineOnce)
-                    yield return CelebrationManager.Instance.ShowCelebrationPopupAndWait(_currentSpinCreditWon);
-            }
+           
             if (scatterpayline)
             {
                 _showPaylineInLoop = false;
-                _reelManager.ClearExpandingWild();
                 yield return _gamePlayStateMachine.
                     StartCoroutine(_paylineController.ShowScatterPayline());
             }
-            if (bonuspayline)
-            {
-                _showPaylineInLoop = false;
-                _reelManager.ClearExpandingWild();
-                yield return _gamePlayStateMachine.
-                    StartCoroutine(_paylineController.ShowBonusPayline());
-            }
+           
             while (_showPaylineInLoop)
             {
                 _paylineController.CurrentPayLineState = PaylineController.PayLineState.Looping;
                 EventManager.InvokeSwitchBaseButtonState(BaseButtonInteractionRegistry.Instance.normalData);
-
-                if (featurepayline)
-                    yield return _gamePlayStateMachine.
-                        StartCoroutine(_paylineController.ShowFeaturePayline());
-                else
-                    yield return _gamePlayStateMachine.
+                yield return _gamePlayStateMachine.
                         StartCoroutine(_paylineController.ShowNormalPayline());
 
             }
 
             _paylineController.CurrentPayLineState = PaylineController.PayLineState.NotShowing;
-            // EventManager.InvokeSwitchBaseButtonState(BaseButtonInteractionRegistry.Instance.normalData);
             _paylineController.WinTint.SetActive(false);
 
         }
@@ -328,7 +250,6 @@ namespace FSM.GamePlay.State
             EventManager.SpinResponseEvent -= OnSpinDataFetched;
             EventManager.SpinButtonClickedEvent -= OnSpinClick;
             EventManager.OnFreeSpinIntroEnded -= SwitchToScatterState;
-            EventManager.BonusStateEnterEvent -= SwitchToBonusState;
             BottomUIPanel.SlamStopReelsEvent -= OnSlamStop;
         }
     }

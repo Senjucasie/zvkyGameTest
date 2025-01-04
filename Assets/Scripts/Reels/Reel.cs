@@ -17,22 +17,12 @@ public class Reel : MonoBehaviour
     private SystemScriptableObject _systemSetting;
     private Vector3 _outcomeStripPosn = new();
     private List<Symbol> _outcomeSymbols = new();
-    private bool _hasPreExpandingWild;
-    private bool _hasExpandingWild;
-    private int _expandingPosition;
-    private PreExpandedWildSymbol _preExpandingWildSymbol;
-    private ExpandingWildSymbol _expandingWildSymbol;
     private Coroutine _spinCoroutine;
     private float _reelTweenEndDuration;
     #endregion internals
 
     #region Properties
     public List<Symbol> OutcomeSymbols { get => _outcomeSymbols; }
-    public bool HasPreExpandingWild { get => _hasPreExpandingWild; set => _hasPreExpandingWild = value; }
-    public PreExpandedWildSymbol PreExpandingWildSymbol { get => _preExpandingWildSymbol; }
-    public ExpandingWildSymbol ExpandingWildSymbol { get => _expandingWildSymbol; }
-    public bool HasExpandingWild { get => _hasExpandingWild; set => _hasExpandingWild = value; }
-    public int ExpandingPosition { get => _expandingPosition; set => _expandingPosition = value; }
     #endregion Properties
 
     void Start()
@@ -68,27 +58,6 @@ public class Reel : MonoBehaviour
         }
     }
 
-    public void InstantiateExpandingWild(int sortingOffset)
-    {
-        float yPos = 0;
-        if (_expandingPosition == 0) yPos = 256.5f;
-        if (_expandingPosition == 1) yPos = 0;
-        if (_expandingPosition == 2) yPos = -256.5f;
-
-        ExpandingWildSymbol symbol = GameFeaturesManager.Instance.ExpandingWildFeature.SymbolPrefab;
-        ExpandingWildSymbol expandingWildSymbol = Instantiate(symbol, this.gameObject.transform)
-                                                .GetComponent<ExpandingWildSymbol>();
-        expandingWildSymbol.transform.localPosition = new Vector3(0, yPos, 0);
-        expandingWildSymbol.IncreaseSpineSortingOrder(sortingOffset);
-
-        this._expandingWildSymbol = expandingWildSymbol;
-    }
-
-    public void DestroyExapndingWilds()
-    {
-        if (ExpandingWildSymbol)
-            Destroy(ExpandingWildSymbol.gameObject);
-    }
 
     public void SetOutcomeSymbol(List<int> symbolIds)
     {
@@ -99,11 +68,7 @@ public class Reel : MonoBehaviour
         int fillerCount = 2; // Recommended = 2, to avoid showing blank space
 
         InstantiateRandomFiller(fillerCount);
-
-        if (!HasPreExpandingWild)
-        {
-
-            int sortingOffset = 1;
+        int sortingOffset = 1;
             foreach (int symbolId in symbolIds)
             {
                 Symbol symbol = SymbolPool.Instance.GetObject(symbolId, outcomeStrip.transform).GetComponent<Symbol>();
@@ -112,14 +77,8 @@ public class Reel : MonoBehaviour
 
                 sortingOffset++;
             }
-        }
-        else if (HasPreExpandingWild)
-        {
-            // TODO: Have to optimize this instantiation and shift it for encapsulation
-            _preExpandingWildSymbol = Instantiate(GameFeaturesManager.Instance.PreExpandingWildFeature.SymbolPrefab, outcomeStrip.transform)
-                                                .GetComponent<PreExpandedWildSymbol>();
-            Debug.Log("Expanding has been instantiated", gameObject);
-        }
+        
+      
 
         InstantiateRandomFiller(fillerCount);
     }

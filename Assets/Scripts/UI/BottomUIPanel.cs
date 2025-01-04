@@ -27,9 +27,6 @@ public class BottomUIPanel : MonoBehaviour
     [SerializeField] private Button infoBtn;
     [SerializeField] private Button spinButton;
     [SerializeField] private Button slamStopButton;
-    [SerializeField] private Button turboButton;
-    [SerializeField] private Button autoPlayBtn;
-    [SerializeField] private Button turboButtonEnabled;
     [SerializeField] private float slamAnticipationDelay = 0;
 
     #endregion
@@ -63,21 +60,16 @@ public class BottomUIPanel : MonoBehaviour
         EventManager.WinAmountEvent += WinAmount;
         EventManager.BalanceAmountDeductionEvent += BalanceDeduction;
         EventManager.OnSpinCompleteEvent += OnSpinComplete;
-        EventManager.FreeSpinGameEndEvent += OnFreeSpinEnded;
-        EventManager.OnAutoSpinStopEvent += StopAutoSpin;
         EventManager.OnClickResetDataEvent += ResetWinAndDisableSlamStop;
         EventManager.OnClickResetWinDataEvent += ResetWinAmount;
-        EventManager.OnAutoSpinPlayedEvent += UpdateAutoSpinCountVisual;
+
         EventManager.SetInitialBalanceEvent += SetInitialBalance;
         EventManager.OnUpdateCurrentBalanceEvent += UpdateBalanceAmount;
-        EventManager.OnUpdateWheelBonusBalanceEvent += UpdateWheelBalanceAmount;
-        AutoPlayConfig.StartAutoSpinEvent += OnAutoSpinStartClicked;
-        AutoPlayConfig.ToggleTurboStateEvent += ToggleTurboStateChanged;
         EventManager.SpinResponseEvent += ShowSlamStopButton;
         EventManager.UpdateCreditValueEvent += UpdateCreditValue;
         EventManager.NormalStateStartedEvent += SetButtonForNormalState;
         EventManager.ScatterStateStartedEvent += SetButtonForScatterState;
-        EventManager.AutoStateStartedEvent += SetButtonStateForAutoState;
+      
         EventManager.SwitchGameButtonStateEvent += SetBaseButtonInteractivity;
         EventManager.SetButtonForResumeEvent += SetButtonForResumeSpin;
         EventManager.DisableSlamStopEvent += DisableSlamStopButton;
@@ -113,7 +105,6 @@ public class BottomUIPanel : MonoBehaviour
     {
         slamStopButton.interactable = enable;
         spinButton.gameObject.SetActive(enable);
-        autoPlayBtn.interactable = enable;
         infoBtn.interactable = enable;
         plusBtn.interactable = enable;
         minusBtn.interactable = enable;
@@ -160,101 +151,7 @@ public class BottomUIPanel : MonoBehaviour
         if (!SlotGameEngineStarter.TurboEnabled)
             button.interactable = true;
     }
-    public void OnTurboButtonClicked()
-    {
-        ToggleTurboStateChanged(!_isTurboButtonClicked);
-        StartCoroutine(TurboSpinInfoPopupCO(!_isTurboButtonClicked));
-        //if(Controller.Instance.CurrentSpinState == Controller.SpinStatesTypes.Spinning)
-        //slamStopButton.interactable = !_isTurboButtonClicked;
-
-        if (ReelManager.Instance._currentSpinState == SpinState.Spinning)
-        {
-            slamStopButton.interactable = !_isTurboButtonClicked;
-            SlotGameEngineStarter.IsTurboCached = SlotGameEngineStarter.TurboEnabled;
-        }
-        else
-            SlotGameEngineStarter.IsTurboCached = false;
-
-        // EventManager.InvokeOnTurboClicked(_isTurboButtonClicked);
-        Audiomanager.Instance.PlayUiSfx(SFX.SpinBtn);
-    }
-
-    private void ToggleTurboStateChanged(bool enable)
-    {
-        _isTurboButtonClicked = enable;
-        turboButtonEnabled.gameObject.SetActive(enable);
-        turboButtonEnabled.interactable = enable;
-        EventManager.InvokeOnTurboClicked(enable);
-    }
-
-    public void OnAutoButtonClicked(bool toggle)
-    {
-        if (toggle)
-        {
-            autoPlayPopup.SetActive(true);
-        }
-        else
-        {
-            turboButton.interactable = false;
-            turboButtonEnabled.interactable = true;
-            autoPlayBtn.interactable = false;
-            AutoPlayStopButtonEvent?.Invoke();
-            autoPlayStopBtnVisual.SetActive(false);
-        }
-
-    }
-    public void StopAutoSpin()
-    {
-        autoPlayStopBtnVisual.SetActive(false);
-        StartCoroutine(AutoSpinInfoPopupCO(false));
-    }
-
-
-    private void OnAutoSpinStartClicked(int autoSpinCount)
-    {
-        Audiomanager.Instance.PlayUiSfx(SFX.Button_Click);
-        StartCoroutine(SetAutoPlayVisuals(autoSpinCount));
-    }
-
-    private IEnumerator SetAutoPlayVisuals(int autospincount) // Contains Button Edge Cases
-    {
-        SetButton(false);
-        yield return StartCoroutine(AutoSpinInfoPopupCO(true));
-        autoPlayStopBtnVisual.SetActive(true);
-        UpdateAutoSpinCountVisual(autospincount);
-        _gamePlayState.SwitchState(_gamePlayState.AutoPlayGameState);
-        EventManager.InvokeOnAutoSpinPlay(autospincount);
-        autoPlayBtn.interactable = true;
-    }
-    private IEnumerator AutoSpinInfoPopupCO(bool isEnabled)
-    {
-        int popup = isEnabled ? 0 : 1;
-        autoPlayInfoPopups[popup].SetActive(true);
-        yield return new WaitForSeconds(1.0f);
-        autoPlayInfoPopups[popup].SetActive(false);
-    }
-
-    private IEnumerator TurboSpinInfoPopupCO(bool isEnabled)
-    {
-        int popup = isEnabled ? 0 : 1;
-        turboPlayInfoPopups[popup].SetActive(true);
-        turboButton.interactable = false;
-        turboButtonEnabled.interactable = false;
-        if (SlotGameEngineStarter.CurrentState == StateName.Normal)
-            autoPlayBtn.interactable = false;
-        yield return new WaitForSeconds(1.0f);
-        turboButton.interactable = true;
-        turboButtonEnabled.interactable = true;
-        if (SlotGameEngineStarter.CurrentState == StateName.Normal && ReelManager.Instance._currentSpinState != SpinState.Spinning)
-            autoPlayBtn.interactable = true;
-        turboPlayInfoPopups[popup].SetActive(false);
-    }
-
-    private void UpdateAutoSpinCountVisual(int count)
-    {
-        autoPlayCountTxt.text = count.ToString();
-    }
-
+ 
     private void OnSpinComplete()   // Gets called only by NormalState
     {
         SetButton(true);
@@ -319,26 +216,7 @@ public class BottomUIPanel : MonoBehaviour
         winAmount.text = "0";
     }
 
-    /*public void OnFreeSpinStarted()
-    { 
-        bottomPanelDisableTint.SetActive(true);
-    }*/
-
-    public void OnFreeSpinEnded()
-    {
-        //bottomPanelDisableTint.SetActive(false);
-    }
-
-    /*public void OnBonusSpinStarted()
-    {
-        bottomPanelDisableTint.SetActive(true);
-    }*/
-
-    /*public void OnBonusSpinEnded()
-    {
-        bottomPanelDisableTint.SetActive(false);
-    }*/
-
+  
     public void SetInitialBalance()
     {
         double balance = GameApiManager.Instance.PlayerData.data.balance;
@@ -437,22 +315,17 @@ public class BottomUIPanel : MonoBehaviour
         EventManager.WinAmountEvent -= WinAmount;
         EventManager.BalanceAmountDeductionEvent -= BalanceDeduction;
         EventManager.OnSpinCompleteEvent -= OnSpinComplete;
-        EventManager.FreeSpinGameEndEvent -= OnFreeSpinEnded;
-        AutoPlayConfig.StartAutoSpinEvent -= OnAutoSpinStartClicked;
-        EventManager.OnAutoSpinPlayedEvent -= UpdateAutoSpinCountVisual;
-        EventManager.OnAutoSpinStopEvent -= StopAutoSpin;
         EventManager.SetInitialBalanceEvent -= SetInitialBalance;
         EventManager.OnUpdateCurrentBalanceEvent -= UpdateBalanceAmount;
-        AutoPlayConfig.ToggleTurboStateEvent -= ToggleTurboStateChanged;
+
         EventManager.SpinResponseEvent -= ShowSlamStopButton;
         EventManager.ScatterStateStartedEvent -= SetButtonForScatterState;
         EventManager.NormalStateStartedEvent -= SetButtonForNormalState;
         EventManager.UpdateCreditValueEvent -= UpdateCreditValue;
         EventManager.SwitchGameButtonStateEvent -= SetBaseButtonInteractivity;
-        EventManager.AutoStateStartedEvent -= SetButtonStateForAutoState;
         EventManager.SetButtonForResumeEvent -= SetButtonForResumeSpin;
         EventManager.DisableSlamStopEvent -= DisableSlamStopButton;
-        EventManager.OnUpdateWheelBonusBalanceEvent -= UpdateWheelBalanceAmount;
+
         EventManager.SetUpdatedResumeBet -= ResumeUpdateCreditValue;
     }
 
