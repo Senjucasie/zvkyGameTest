@@ -1,0 +1,197 @@
+stag.png
+size:1024,1024
+filter:Linear,Linear
+pma:true
+BG_Fx/fx 00
+bounds:34,789,100,100
+offsets:1,1,102,102
+BG_Fx/fx 02
+bounds:34,687,100,100
+offsets:1,1,102,102
+BG_Fx/fx 04
+bounds:344,906,100,100
+offsets:1,1,102,102
+BG_Fx/fx 06
+bounds:197,821,100,100
+offsets:1,1,102,102
+BG_Fx/fx 08
+bounds:197,719,100,100
+offsets:1,1,102,102
+BG_Fx/fx 10
+bounds:299,804,100,100
+offsets:1,1,102,102
+BG_Fx/fx 12
+bounds:299,702,100,100
+offsets:1,1,102,102
+BG_Fx/fx 14
+bounds:34,585,100,100
+offsets:1,1,102,102
+BG_Fx/fx 16
+bounds:17,483,100,100
+offsets:1,1,102,102
+BG_Fx/fx 18
+bounds:17,381,100,100
+offsets:1,1,102,102
+BG_Fx/fx 20
+bounds:196,617,100,100
+offsets:1,1,102,102
+BG_Fx/fx 22
+bounds:298,600,100,100
+offsets:1,1,102,102
+BG_Fx/fx 24
+bounds:401,804,100,100
+offsets:1,1,102,102
+BG_Fx/fx 26
+bounds:401,702,100,100
+offsets:1,1,102,102
+BG_Fx/fx 28
+bounds:400,600,100,100
+offsets:1,1,102,102
+BG_Fx/fx 30
+bounds:446,906,100,100
+offsets:1,1,102,102
+BG_Fx/fx 32
+bounds:548,924,100,100
+offsets:1,1,102,102
+BG_Fx/fx 34
+bounds:650,924,100,100
+offsets:1,1,102,102
+BG_Fx/fx 36
+bounds:752,924,100,100
+offsets:1,1,102,102
+BG_Fx/fx 38
+bounds:854,924,100,100
+offsets:1,1,102,102
+BG_Fx/fx 40
+bounds:503,804,100,100
+offsets:1,1,102,102
+BG_Fx/fx 42
+bounds:503,702,100,100
+offsets:1,1,102,102
+BG_Fx/fx 44
+bounds:502,600,100,100
+offsets:1,1,102,102
+BG_Fx/fx 46
+bounds:605,822,100,100
+offsets:1,1,102,102
+BG_Fx/fx 48
+bounds:605,720,100,100
+offsets:1,1,102,102
+BG_Fx/fx 50
+bounds:707,822,100,100
+offsets:1,1,102,102
+BG_Fx/fx 52
+bounds:707,720,100,100
+offsets:1,1,102,102
+BG_Fx/fx 54
+bounds:809,822,100,100
+offsets:1,1,102,102
+BG_Fx/fx 56
+bounds:809,720,100,100
+offsets:1,1,102,102
+BG_Fx/fx 58
+bounds:911,822,100,100
+offsets:1,1,102,102
+bottom
+bounds:0,633,256,16
+rotate:90
+bottom_left
+bounds:680,691,27,27
+bottom_right
+bounds:579,570,28,27
+rotate:90
+left
+bounds:195,1008,16,256
+rotate:90
+right
+bounds:0,375,15,256
+stag/stag_body
+bounds:0,891,193,133
+offsets:0,0,197,133
+stag/stag_body_light_left
+bounds:136,756,59,133
+offsets:0,2,59,135
+stag/stag_body_light_right
+bounds:0,285,88,14
+rotate:90
+stag/stag_ear_left
+bounds:136,601,62,58
+rotate:90
+stag/stag_ear_light_lower_left
+bounds:450,518,39,51
+rotate:90
+stag/stag_ear_light_lower_right
+bounds:604,659,35,38
+stag/stag_ear_light_upper_left
+bounds:991,745,45,24
+rotate:90
+stag/stag_ear_light_upper_right
+bounds:605,699,43,19
+stag/stag_ear_right
+bounds:450,559,60,39
+stag/stag_eye_left
+bounds:991,726,23,17
+stag/stag_eye_right
+bounds:17,617,12,14
+stag/stag_eye_shine_left
+bounds:1017,779,11,7
+rotate:90
+stag/stag_eye_shine_right
+bounds:1017,770,7,7
+stag/stag_eyelash_left
+bounds:1008,1015,16,9
+stag/stag_face
+bounds:911,723,78,97
+offsets:0,0,79,97
+stag/stag_face_light_left
+bounds:196,544,71,100
+offsets:1,0,72,100
+rotate:90
+stag/stag_face_light_right
+bounds:453,1010,14,53
+rotate:90
+stag/stag_horn_left
+bounds:298,527,71,97
+rotate:90
+stag/stag_horn_left_2
+bounds:956,957,50,67
+stag/stag_horn_right
+bounds:136,665,58,89
+stag/stag_horn_right_2
+bounds:512,564,34,65
+rotate:90
+stag/stag_lower_eyelid_left
+bounds:994,930,30,25
+offsets:0,1,30,26
+stag/stag_lower_eyelid_r
+bounds:299,906,10,15
+offsets:1,0,11,15
+stag/stag_lower_mouth
+bounds:991,792,33,28
+stag/stag_neck
+bounds:195,923,83,147
+offsets:11,0,94,147
+rotate:90
+stag/stag_nose
+bounds:397,535,51,63
+stag/stag_pupil_left
+bounds:119,573,10,10
+offsets:1,1,12,12
+stag/stag_pupil_right
+bounds:1016,733,8,10
+stag/stag_upper_eyelid_left
+bounds:956,924,36,31
+stag/stag_upper_eyelid_r
+bounds:548,906,16,18
+offsets:1,1,17,19
+rotate:90
+stag/stag_upper_mouth
+bounds:604,618,39,26
+rotate:90
+top
+bounds:18,633,256,14
+rotate:90
+top_left
+bounds:709,692,27,26
+top_right
+bounds:650,692,28,26

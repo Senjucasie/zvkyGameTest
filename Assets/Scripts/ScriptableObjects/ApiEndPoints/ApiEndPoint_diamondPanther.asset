@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e09fa80ae94a844e96a418630c582ea, type: 3}
+  m_Name: ApiEndPoint_diamondPanther
+  m_EditorClassIdentifier: 
+  _resumeUrl: /game/resume
+  _login: /auth/login
+  _play: /game/diamond-panther/play
+  _continue: /game/diamond-panther/continue
+  _playerInfo: /player
+  _bet: 40
+  _localUri: http://192.168.44.16:8001/v1
+  _useLocal: 1
+  _productionUri: http://34.205.135.210/v1
+  _useProduction: 0

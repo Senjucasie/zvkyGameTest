@@ -1,0 +1,106 @@
+bonus_activated.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+scale:0.6
+a
+bounds:1651,1544,76,97
+rotate:90
+a2
+bounds:1386,1338,76,97
+rotate:90
+b
+bounds:1280,1341,73,104
+rotate:90
+bg
+bounds:0,69,727,456
+c
+bounds:984,1251,70,99
+offsets:0,0,71,99
+rotate:90
+d
+bounds:1085,1252,69,98
+offsets:2,0,71,98
+rotate:90
+e
+bounds:503,0,67,99
+rotate:90
+frame_gold
+bounds:777,1416,784,615
+offsets:0,28,784,644
+frame_gold_shine 1
+bounds:1597,1530,29,501
+offsets:3,0,32,501
+frame_gold_shine 10
+bounds:777,1323,24,501
+offsets:3,0,31,501
+rotate:90
+frame_gold_shine 11
+bounds:1628,1530,21,501
+offsets:3,0,28,501
+frame_gold_shine 4
+bounds:777,1382,32,501
+offsets:2,0,34,501
+rotate:90
+frame_gold_shine 5
+bounds:1563,1530,32,501
+offsets:3,0,35,501
+frame_gold_shine 6
+bounds:0,35,32,501
+offsets:3,0,35,501
+rotate:90
+frame_gold_shine 7
+bounds:722,746,32,501
+offsets:3,0,35,501
+frame_gold_shine 8
+bounds:777,1349,31,501
+offsets:3,0,35,501
+rotate:90
+frame_gold_shine 9
+bounds:0,5,28,501
+offsets:3,0,35,501
+rotate:90
+gem_top_left
+bounds:700,38,29,23
+rotate:90
+gem_top_left_fx
+bounds:1485,1334,87,80
+offsets:11,11,109,101
+gold_design_bottom_left
+bounds:1651,1622,100,139
+gold_design_bottom_right
+bounds:1651,1902,112,129
+gold_design_top_left
+bounds:1651,1763,103,137
+gold_design_top_right
+bounds:1765,1922,109,131
+rotate:90
+i
+bounds:722,650,29,94
+n
+bounds:777,1253,68,103
+rotate:90
+o
+bounds:1898,1927,95,104
+s
+bounds:1563,1424,71,104
+shine1
+bounds:0,1249,775,782
+offsets:14,0,789,782
+shine2
+bounds:0,527,720,720
+shine3
+bounds:1995,2001,30,30
+t
+bounds:604,1,66,94
+rotate:90
+t2
+bounds:1284,1274,65,94
+rotate:90
+u
+bounds:882,1252,69,100
+rotate:90
+v
+bounds:1185,1249,72,97
+offsets:2,0,74,97
+rotate:90

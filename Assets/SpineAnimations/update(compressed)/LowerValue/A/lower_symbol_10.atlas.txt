@@ -1,0 +1,267 @@
+lower_symbol_10.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+scale:0.5
+A/A_00000
+bounds:1669,1795,253,255
+offsets:17,30,300,300
+rotate:90
+A/A_00002
+bounds:0,164,252,257
+offsets:18,29,300,300
+A/A_00004
+bounds:0,685,250,263
+offsets:20,25,300,300
+A/A_00006
+bounds:0,1500,250,270
+offsets:17,20,300,300
+A/A_00008
+bounds:256,1810,238,280
+offsets:19,13,300,300
+rotate:90
+A/A_00010
+bounds:829,1856,192,289
+offsets:38,6,300,300
+rotate:90
+A/A_00012
+bounds:0,86,76,288
+offsets:100,4,300,300
+rotate:90
+A/A_00014
+bounds:538,1834,214,289
+offsets:46,8,300,300
+rotate:90
+A/A_00016
+bounds:0,1772,254,276
+offsets:17,18,300,300
+A/A_00018
+bounds:1926,1757,101,291
+offsets:89,2,300,300
+A/A_00020
+bounds:1120,1866,182,289
+offsets:63,5,300,300
+rotate:90
+A/A_00022
+bounds:0,1219,239,279
+offsets:30,14,300,300
+A/A_00024
+bounds:0,950,251,267
+offsets:19,22,300,300
+A/A_00026
+bounds:0,423,252,260
+offsets:17,27,300,300
+A/A_00028
+bounds:1411,1795,253,256
+offsets:17,30,300,300
+rotate:90
+A_shadow/A_00000
+bounds:405,1673,132,135
+offsets:7,11,150,150
+A_shadow/A_00002
+bounds:383,1425,132,136
+offsets:7,10,150,150
+rotate:90
+A_shadow/A_00004
+bounds:252,1564,131,138
+offsets:8,9,150,150
+A_shadow/A_00006
+bounds:539,1692,129,140
+offsets:8,7,150,150
+A_shadow/A_00008
+bounds:253,1132,123,144
+offsets:9,4,150,150
+A_shadow/A_00010
+bounds:256,1704,104,147
+offsets:17,1,150,150
+rotate:90
+A_shadow/A_00012
+bounds:150,29,55,148
+offsets:43,0,150,150
+rotate:90
+A_shadow/A_00014
+bounds:385,1559,112,147
+offsets:21,2,150,150
+rotate:90
+A_shadow/A_00016
+bounds:670,1692,129,140
+offsets:9,7,150,150
+A_shadow/A_00018
+bounds:0,19,65,148
+offsets:39,0,150,150
+rotate:90
+A_shadow/A_00020
+bounds:253,892,100,147
+offsets:28,1,150,150
+rotate:90
+A_shadow/A_00022
+bounds:241,1278,125,143
+offsets:13,4,150,150
+A_shadow/A_00024
+bounds:252,1423,129,139
+offsets:9,8,150,150
+A_shadow/A_00026
+bounds:253,994,132,136
+offsets:7,10,150,150
+A_shadow/A_00028
+bounds:252,755,132,135
+offsets:7,11,150,150
+crack_1 01
+bounds:1120,1856,10,8
+offsets:0,0,11,8
+crack_1 02
+bounds:871,1834,20,14
+rotate:90
+crack_1 03
+bounds:386,865,25,14
+rotate:90
+crack_1 04
+bounds:539,1675,31,15
+crack_1 05
+bounds:829,1834,40,20
+crack_1 06
+bounds:180,4,42,23
+crack_1 07
+bounds:180,4,42,23
+crack_1 08
+bounds:180,4,42,23
+crack_1 09
+bounds:180,4,42,23
+crack_1 10
+bounds:180,4,42,23
+crack_2 01
+bounds:946,1685,13,11
+crack_2 02
+bounds:0,0,17,23
+rotate:90
+crack_2 03
+bounds:2029,2012,19,36
+crack_2 04
+bounds:314,185,22,48
+rotate:90
+crack_2 05
+bounds:254,184,23,58
+rotate:90
+crack_2 06
+bounds:254,184,23,58
+rotate:90
+crack_2 07
+bounds:254,184,23,58
+rotate:90
+crack_2 08
+bounds:254,184,23,58
+rotate:90
+crack_2 09
+bounds:254,184,23,58
+rotate:90
+crack_2 10
+bounds:254,184,23,58
+rotate:90
+crack_3 01
+bounds:1402,1856,7,8
+crack_3 02
+bounds:1168,1775,16,11
+crack_3 03
+bounds:368,1398,23,11
+rotate:90
+crack_3 04
+bounds:521,1531,26,11
+rotate:90
+crack_3 05
+bounds:521,1531,26,11
+rotate:90
+crack_3 06
+bounds:521,1531,26,11
+rotate:90
+crack_3 07
+bounds:521,1531,26,11
+rotate:90
+crack_3 08
+bounds:521,1531,26,11
+rotate:90
+crack_3 09
+bounds:521,1531,26,11
+rotate:90
+crack_3 10
+bounds:521,1531,26,11
+rotate:90
+crack_4 02
+bounds:241,1255,5,21
+offsets:0,1,5,25
+crack_4 03
+bounds:241,1471,9,27
+offsets:0,0,9,30
+crack_4 04
+bounds:257,0,14,27
+offsets:0,0,14,30
+crack_4 05
+bounds:385,1675,18,27
+offsets:0,0,19,30
+crack_4 06
+bounds:224,4,23,31
+offsets:0,0,24,32
+rotate:90
+crack_4 07
+bounds:1087,1732,28,35
+crack_4 08
+bounds:1054,1727,31,37
+crack_4 09
+bounds:1054,1727,31,37
+crack_4 10
+bounds:1054,1727,31,37
+debris 02
+bounds:254,169,11,13
+offsets:0,1,11,15
+debris 03
+bounds:2029,1990,19,20
+offsets:0,0,19,21
+debris 04
+bounds:150,0,28,27
+offsets:0,1,28,29
+debris 05
+bounds:962,1714,44,45
+offsets:0,0,44,46
+debris 06
+bounds:1008,1719,44,45
+offsets:0,1,44,46
+debris 07
+bounds:890,1643,53,54
+rotate:90
+debris 08
+bounds:899,1698,61,61
+offsets:0,0,61,62
+debris 09
+bounds:1330,1796,70,68
+offsets:0,1,70,70
+debris 10
+bounds:1168,1788,79,76
+debris 11
+bounds:1249,1788,79,76
+debris 12
+bounds:1085,1769,85,81
+rotate:90
+debris 13
+bounds:994,1766,89,88
+offsets:0,0,90,88
+debris 14
+bounds:801,1735,97,96
+rotate:90
+debris 15
+bounds:254,313,106,102
+debris 16
+bounds:254,209,106,102
+debris 17
+bounds:254,417,113,104
+debris 18
+bounds:254,523,120,100
+debris 19
+bounds:899,1761,93,93
+debris 20
+bounds:994,1761,3,3
+debris 21
+bounds:994,1761,3,3
+lower_bg
+bounds:254,625,128,128
+shadow
+bounds:801,1648,87,85
+offsets:1,1,89,90

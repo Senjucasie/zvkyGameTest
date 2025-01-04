@@ -1,0 +1,195 @@
+puma.png
+size:1024,1024
+filter:Linear,Linear
+pma:true
+BG_Fx/fx 00
+bounds:15,589,100,100
+offsets:1,1,102,102
+BG_Fx/fx 02
+bounds:226,868,100,100
+offsets:1,1,102,102
+BG_Fx/fx 04
+bounds:15,489,100,100
+offsets:1,1,102,102
+BG_Fx/fx 06
+bounds:326,868,100,100
+offsets:1,1,102,102
+BG_Fx/fx 08
+bounds:143,734,100,100
+offsets:1,1,102,102
+BG_Fx/fx 10
+bounds:243,768,100,100
+offsets:1,1,102,102
+BG_Fx/fx 12
+bounds:343,768,100,100
+offsets:1,1,102,102
+BG_Fx/fx 14
+bounds:15,389,100,100
+offsets:1,1,102,102
+BG_Fx/fx 16
+bounds:0,289,100,100
+offsets:1,1,102,102
+BG_Fx/fx 18
+bounds:0,189,100,100
+offsets:1,1,102,102
+BG_Fx/fx 20
+bounds:0,89,100,100
+offsets:1,1,102,102
+BG_Fx/fx 22
+bounds:143,634,100,100
+offsets:1,1,102,102
+BG_Fx/fx 24
+bounds:243,668,100,100
+offsets:1,1,102,102
+BG_Fx/fx 26
+bounds:343,668,100,100
+offsets:1,1,102,102
+BG_Fx/fx 28
+bounds:115,534,100,100
+offsets:1,1,102,102
+BG_Fx/fx 30
+bounds:115,434,100,100
+offsets:1,1,102,102
+BG_Fx/fx 32
+bounds:115,334,100,100
+offsets:1,1,102,102
+BG_Fx/fx 34
+bounds:100,234,100,100
+offsets:1,1,102,102
+BG_Fx/fx 36
+bounds:100,134,100,100
+offsets:1,1,102,102
+BG_Fx/fx 38
+bounds:100,34,100,100
+offsets:1,1,102,102
+BG_Fx/fx 40
+bounds:215,500,100,100
+offsets:1,1,102,102
+BG_Fx/fx 42
+bounds:215,400,100,100
+offsets:1,1,102,102
+BG_Fx/fx 44
+bounds:215,300,100,100
+offsets:1,1,102,102
+BG_Fx/fx 46
+bounds:200,200,100,100
+offsets:1,1,102,102
+BG_Fx/fx 48
+bounds:200,100,100,100
+offsets:1,1,102,102
+BG_Fx/fx 50
+bounds:200,0,100,100
+offsets:1,1,102,102
+BG_Fx/fx 52
+bounds:348,568,100,100
+offsets:1,1,102,102
+BG_Fx/fx 54
+bounds:315,468,100,100
+offsets:1,1,102,102
+BG_Fx/fx 56
+bounds:315,368,100,100
+offsets:1,1,102,102
+BG_Fx/fx 58
+bounds:315,268,100,100
+offsets:1,1,102,102
+BG_Fx/fx 59
+bounds:300,168,100,100
+offsets:1,1,102,102
+bottom
+bounds:226,1008,256,16
+bottom_left
+bounds:171,7,27,27
+bottom_right
+bounds:215,607,28,27
+puma/body
+bounds:0,834,226,190
+offsets:0,0,226,192
+puma/body_light_left
+bounds:226,968,40,197
+rotate:90
+puma/body_light_right
+bounds:300,71,100,97
+puma/ear_left
+bounds:243,600,68,105
+rotate:90
+puma/ear_light_left
+bounds:300,8,63,100
+rotate:90
+puma/ear_light_right
+bounds:415,277,62,54
+puma/ear_right
+bounds:415,331,77,63
+rotate:90
+puma/eye_left
+bounds:448,620,24,19
+rotate:90
+puma/eye_left copy
+bounds:226,850,18,16
+rotate:90
+puma/face
+bounds:0,689,143,145
+offsets:0,0,156,145
+puma/lower_eyelid_left
+bounds:315,569,33,31
+puma/lower_eyelid_right
+bounds:443,725,25,32
+offsets:1,0,27,32
+puma/lower_jaw
+bounds:0,8,96,81
+offsets:0,0,97,81
+puma/lower_mouth
+bounds:426,903,65,41
+rotate:90
+puma/lower_teeth
+bounds:423,968,47,40
+offsets:0,0,54,44
+puma/nose
+bounds:415,408,53,79
+offsets:0,0,53,80
+puma/pupil_left
+bounds:448,577,19,19
+offsets:1,1,21,21
+puma/pupil_left copy
+bounds:100,375,14,15
+offsets:1,1,16,17
+rotate:90
+puma/tear_gland_left
+bounds:448,596,24,18
+rotate:90
+puma/tongue
+bounds:426,868,35,51
+rotate:90
+puma/upper_eyelid_left
+bounds:443,757,44,35
+rotate:90
+puma/upper_eyelid_right
+bounds:443,694,31,22
+offsets:0,0,31,23
+rotate:90
+puma/upper_mouth
+bounds:415,487,81,47
+rotate:90
+puma/upper_teeth
+bounds:129,12,42,22
+offsets:0,0,44,27
+puma/whisker_left_1
+bounds:482,1014,56,10
+puma/whisker_left_2
+bounds:443,801,67,25
+rotate:90
+puma/whisker_left_3
+bounds:115,660,28,29
+puma/whisker_right_1
+bounds:0,392,41,7
+rotate:90
+puma/whisker_right_2
+bounds:96,0,34,33
+rotate:90
+puma/whisker_right_3
+bounds:448,644,21,24
+right
+bounds:0,433,15,256
+top_left
+bounds:443,668,27,26
+top_right
+bounds:115,634,28,26

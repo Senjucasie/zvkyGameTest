@@ -1,0 +1,408 @@
+J.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+J/J_00000
+bounds:1296,33,328,552
+offsets:5,64,476,650
+rotate:90
+J/J_00005
+bounds:706,0,333,553
+offsets:9,69,476,650
+rotate:90
+J/J_00006
+bounds:1582,923,337,555
+offsets:7,69,476,650
+J/J_00007
+bounds:1241,921,339,557
+offsets:7,69,476,650
+J/J_00008
+bounds:903,910,336,559
+offsets:11,69,476,650
+J/J_00009
+bounds:316,886,326,561
+offsets:20,69,476,650
+J/J_00010
+bounds:401,324,303,560
+offsets:39,70,476,650
+J/J_00011
+bounds:1035,350,259,558
+offsets:73,71,476,650
+J/J_00014
+bounds:644,897,257,560
+offsets:158,66,476,650
+J/J_00015
+bounds:991,1484,335,564
+offsets:136,61,476,650
+J/J_00016
+bounds:1296,363,336,556
+offsets:136,58,476,650
+J/J_00017
+bounds:0,1449,326,599
+offsets:126,28,476,650
+J/J_00018
+bounds:1328,1480,237,622
+offsets:136,13,476,650
+rotate:90
+J/J_00019
+bounds:283,227,116,615
+offsets:172,14,476,650
+J/J_00020
+bounds:0,6,219,621
+offsets:100,16,476,650
+rotate:90
+J/J_00021
+bounds:0,227,281,615
+offsets:52,23,476,650
+J/J_00022
+bounds:0,844,314,603
+offsets:24,32,476,650
+J/J_00023
+bounds:328,1459,328,589
+offsets:10,41,476,650
+J/J_00024
+bounds:658,1471,331,577
+offsets:4,48,476,650
+J/J_00025
+bounds:1328,1719,329,568
+offsets:3,54,476,650
+rotate:90
+J/J_00026
+bounds:706,335,327,560
+offsets:3,59,476,650
+J/J_00027
+bounds:1634,365,326,556
+offsets:4,61,476,650
+J_shadow/J_00012
+bounds:1962,767,70,167
+offsets:39,34,159,217
+J_shadow/J_00013
+bounds:1962,413,57,166
+offsets:56,34,159,217
+J_shadow/J_00014
+bounds:1962,1567,86,167
+offsets:49,33,159,217
+J_shadow/J_00017
+bounds:1921,1114,104,177
+offsets:40,23,159,217
+J_shadow/J_00018
+bounds:623,138,81,184
+offsets:42,19,159,217
+J_shadow/J_00019
+bounds:1962,581,49,184
+offsets:52,18,159,217
+J_shadow/J_00020
+bounds:1921,1293,77,185
+offsets:33,19,159,217
+J_shadow/J_00021
+bounds:401,227,95,183
+offsets:19,21,159,217
+rotate:90
+J_shadow/J_00022
+bounds:1850,20,103,179
+offsets:12,24,159,217
+rotate:90
+J_shadow/J_00023
+bounds:1921,936,107,176
+offsets:8,26,159,217
+crack_1 01
+bounds:691,71,20,13
+offsets:1,1,22,15
+rotate:90
+crack_1 02
+bounds:1261,167,38,25
+offsets:1,1,40,27
+rotate:90
+crack_1 03
+bounds:2013,597,48,25
+offsets:1,1,50,27
+rotate:90
+crack_1 04
+bounds:2013,705,60,28
+offsets:1,1,62,30
+rotate:90
+crack_1 05
+bounds:316,846,77,38
+offsets:1,1,79,40
+crack_1 06
+bounds:623,93,81,43
+offsets:1,1,83,45
+crack_1 07
+bounds:623,93,81,43
+offsets:1,1,83,45
+crack_1 08
+bounds:623,93,81,43
+offsets:1,1,83,45
+crack_1 09
+bounds:623,93,81,43
+offsets:1,1,83,45
+crack_1 10
+bounds:623,93,81,43
+offsets:1,1,83,45
+crack_2 01
+bounds:1261,145,24,20
+offsets:1,1,26,22
+crack_2 02
+bounds:1261,305,32,43
+offsets:1,1,34,45
+crack_2 03
+bounds:2000,1293,36,69
+offsets:1,1,38,71
+crack_2 05
+bounds:2000,1364,44,114
+offsets:1,1,46,116
+crack_2 06
+bounds:2000,1364,44,114
+offsets:1,1,46,116
+crack_2 07
+bounds:2000,1364,44,114
+offsets:1,1,46,116
+crack_2 08
+bounds:2000,1364,44,114
+offsets:1,1,46,116
+crack_2 09
+bounds:2000,1364,44,114
+offsets:1,1,46,116
+crack_2 10
+bounds:2000,1364,44,114
+offsets:1,1,46,116
+crack_3 01
+bounds:991,1471,11,14
+offsets:1,1,13,16
+rotate:90
+crack_3 02
+bounds:586,245,30,19
+offsets:1,1,32,21
+crack_3 03
+bounds:1261,207,44,19
+offsets:1,1,46,21
+rotate:90
+crack_3 04
+bounds:1261,253,50,19
+offsets:1,1,52,21
+rotate:90
+crack_3 05
+bounds:1261,253,50,19
+offsets:1,1,52,21
+rotate:90
+crack_3 06
+bounds:1261,253,50,19
+offsets:1,1,52,21
+rotate:90
+crack_3 07
+bounds:1261,253,50,19
+offsets:1,1,52,21
+rotate:90
+crack_3 08
+bounds:1261,253,50,19
+offsets:1,1,52,21
+rotate:90
+crack_3 09
+bounds:1261,253,50,19
+offsets:1,1,52,21
+rotate:90
+crack_3 10
+bounds:1261,253,50,19
+offsets:1,1,52,21
+rotate:90
+crack_4 02
+bounds:328,1449,8,47
+offsets:1,1,10,50
+rotate:90
+crack_4 03
+bounds:1898,1719,15,56
+offsets:1,1,17,59
+rotate:90
+crack_4 04
+bounds:2013,647,25,56
+offsets:1,1,27,59
+crack_4 05
+bounds:586,266,35,56
+offsets:1,1,37,59
+crack_4 06
+bounds:1962,366,45,62
+offsets:1,1,47,64
+rotate:90
+debris 02
+bounds:1261,118,19,25
+offsets:1,2,21,29
+debris 05
+bounds:1952,1480,85,89
+offsets:1,1,87,92
+rotate:90
+debris 10
+bounds:1898,1893,155,150
+offsets:1,1,157,152
+rotate:90
+debris 11
+bounds:1898,1736,155,150
+offsets:1,1,157,152
+rotate:90
+debris 18
+bounds:1850,125,238,198
+offsets:1,1,240,200
+rotate:90
+debris 20
+bounds:618,261,3,3
+offsets:1,1,5,5
+debris 21
+bounds:618,261,3,3
+offsets:1,1,5,5
+shadow
+bounds:623,2,66,89
+offsets:2,1,69,105
+
+J_2.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+J/J_00001
+bounds:329,1497,328,551
+offsets:6,65,476,650
+J/J_00002
+bounds:989,1498,328,550
+offsets:7,67,476,650
+J/J_00003
+bounds:329,946,328,549
+offsets:9,69,476,650
+J/J_00004
+bounds:659,1497,328,551
+offsets:11,69,476,650
+J/J_00012
+bounds:1319,1857,191,553
+offsets:126,72,476,650
+rotate:90
+J/J_00013
+bounds:0,393,144,547
+offsets:188,73,476,650
+J/J_00028
+bounds:0,1495,327,553
+offsets:5,63,476,650
+J/J_00029
+bounds:0,942,327,551
+offsets:5,64,476,650
+J_shadow/J_00000
+bounds:1244,1329,107,167
+offsets:7,32,159,217
+J_shadow/J_00001
+bounds:870,960,107,167
+offsets:7,32,159,217
+rotate:90
+J_shadow/J_00002
+bounds:559,776,107,168
+offsets:7,32,159,217
+J_shadow/J_00003
+bounds:337,667,107,167
+offsets:8,33,159,217
+rotate:90
+J_shadow/J_00004
+bounds:1134,1329,108,167
+offsets:8,33,159,217
+J_shadow/J_00005
+bounds:1353,1368,108,167
+offsets:8,33,159,217
+J_shadow/J_00006
+bounds:337,776,109,168
+offsets:8,33,159,217
+J_shadow/J_00007
+bounds:448,776,109,168
+offsets:8,33,159,217
+J_shadow/J_00008
+bounds:1319,1537,110,169
+offsets:8,33,159,217
+rotate:90
+J_shadow/J_00009
+bounds:917,1326,106,169
+offsets:11,33,159,217
+J_shadow/J_00010
+bounds:870,1069,100,168
+offsets:16,34,159,217
+J_shadow/J_00011
+bounds:110,223,89,168
+offsets:25,34,159,217
+J_shadow/J_00015
+bounds:201,231,107,168
+offsets:43,32,159,217
+J_shadow/J_00016
+bounds:506,667,107,166
+offsets:43,31,159,217
+rotate:90
+J_shadow/J_00024
+bounds:0,218,108,173
+offsets:6,28,159,217
+J_shadow/J_00025
+bounds:1756,1684,108,171
+offsets:6,29,159,217
+J_shadow/J_00026
+bounds:0,46,107,170
+offsets:6,30,159,217
+J_shadow/J_00027
+bounds:1025,1327,107,169
+offsets:6,31,159,217
+J_shadow/J_00028
+bounds:972,1069,106,168
+offsets:7,31,159,217
+J_shadow/J_00029
+bounds:332,558,107,167
+offsets:7,32,159,217
+rotate:90
+crack_2 04
+bounds:1490,1554,41,93
+offsets:1,1,43,95
+crack_4 07
+bounds:560,475,54,68
+offsets:1,1,56,70
+crack_4 08
+bounds:659,961,60,72
+offsets:1,1,62,74
+crack_4 09
+bounds:659,961,60,72
+offsets:1,1,62,74
+crack_4 10
+bounds:659,961,60,72
+offsets:1,1,62,74
+debris 03
+bounds:0,4,36,40
+offsets:1,1,38,42
+debris 04
+bounds:721,977,53,56
+offsets:1,1,55,58
+debris 06
+bounds:917,1239,85,89
+offsets:1,1,87,91
+rotate:90
+debris 07
+bounds:455,437,103,106
+offsets:1,1,105,108
+debris 08
+bounds:501,545,120,121
+offsets:1,1,122,123
+rotate:90
+debris 09
+bounds:315,419,138,137
+offsets:1,1,140,139
+debris 12
+bounds:146,401,167,160
+offsets:1,1,169,162
+debris 13
+bounds:1874,1872,176,174
+offsets:1,1,179,176
+rotate:90
+debris 14
+bounds:146,749,191,189
+offsets:1,1,193,191
+rotate:90
+debris 15
+bounds:659,1035,209,202
+offsets:1,1,211,204
+debris 16
+bounds:1545,1653,209,202
+offsets:1,1,211,204
+debris 17
+bounds:1319,1649,224,206
+offsets:1,1,226,208
+debris 19
+bounds:146,563,184,184
+offsets:1,1,186,186
+lower_bg
+bounds:659,1239,256,256

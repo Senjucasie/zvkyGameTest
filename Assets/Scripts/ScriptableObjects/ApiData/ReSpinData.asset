@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3fca27e4955e7649966a5e1da5792d3, type: 3}
+  m_Name: ReSpinData
+  m_EditorClassIdentifier: 
+  _spinParsedData:
+    success: 0
+    message: Last State Fetched Successfully
+    data:
+      balance: 1009878
+      creditValue: 1
+      betMultiplier: 1
+      reelMode: 0
+      state:
+        current: BASE
+        next: COMPLETED
+      reelStops: 
+      payline:
+      - paylineNo: 3
+        symbol: 0
+        symbolCount: 3
+        positions: 0200000002000000020000000200000002000000
+        multiplier: 0
+        won: 20
+      featurePaylines: []
+      expandingWild: 
+      expandingPosition: []
+      scatter:
+        count: 0
+        position: []
+        freegametrigger: 0
+        freeGameRetrigger: 0
+        creditWon: 0
+        freeSpinWon: 0
+      freeGame:
+        currentFreeSpin: 0
+        totalFreeSpin: 0
+      bonus:
+        wheelSpin:
+          award: 
+          amount: 0
+        bonusTrigger: 1
+        bonusSymbolCount: 3
+        bonusSymbolPos:
+        - 0,2
+        - 1,2
+        - 2,2
+        TotalBonusWin: 100
+      pickBonus:
+        count: 3
+        position:
+        - 0,0
+        - 1,0
+        - 2,0
+        bonusGametrigger: 1
+        revealAmount: 40060000600900002003000090010000b004000000000000
+        creditWon: 6400
+      mainSpinCreditsWon: 0
+      creditsWonOnBaseSpin: 0
+      freeSpinCreditsWon: 0
+      freeSpinTotalWon: 0
+      totalCreditsWon: 0
+      creditsWagered: 30
+      finalWinnings:
+        TotalWon: 0
+        net: -30
+      next: COMPLETED
+      reSpin:
+        currentRespin: 1
+        totalRespin: 5
+        baseRespinCreditWon: 20
+        baseRespinTotalWon: 100
+  _wheelBonusData:
+    status: 0
+    message: 
+    data:
+      wheelSpin:
+        reward: 
+        amount: 0
+      state:
+        current: 
+      next: 
+      balance: 0

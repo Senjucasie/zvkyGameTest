@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3ac2531fa002e846a03a0a0e8a3389a, type: 3}
+  m_Name: SystemConfig
+  m_EditorClassIdentifier: 
+  SymbolPrefabs:
+  - {fileID: 7553544663619973427, guid: 9943f96e46a1ecb41a2dc91622b3046f, type: 3}
+  - {fileID: 4442724491522668354, guid: 4eedacb207e13fc43bdea0987ed38aa6, type: 3}
+  - {fileID: 4372668271137607328, guid: 479357d23e5cd5c4e84b4dcfd1ac16f5, type: 3}
+  - {fileID: 6154832051245562090, guid: 5267ff02d7a6d6744af5c18315ea3d4c, type: 3}
+  - {fileID: 3353710105601291994, guid: 5f32e06138d9a9a47a90cc4dc110aaf4, type: 3}
+  - {fileID: 1319014747467883459, guid: a1a06eba474ec3342aa5fff9c34774b7, type: 3}
+  - {fileID: 7918401121116959327, guid: 50e5e97f7c2902441a2ac7f7e8475ea3, type: 3}
+  - {fileID: 5029833773570528075, guid: 278bf656cfd7c3b45bd8ac2968517663, type: 3}
+  - {fileID: 1213856723793942091, guid: 98683ed71cd93e44bb6a648446a0e4eb, type: 3}
+  - {fileID: 8776433445755372772, guid: ca0a87a8ce92c15488225f68e431b56d, type: 3}
+  - {fileID: 7997320467244722853, guid: a04fd86c11e24a94fba5cde3b5f292e2, type: 3}
+  - {fileID: 2470456534006654984, guid: 2f9ede829794c9e4187e7eda0edc55f6, type: 3}
+  - {fileID: 5047865540731288653, guid: 62f7b0202980ae24b8bf52ea4ed34dbc, type: 3}
+  ShowPaylineDuration: 2
+  ShowFlashPaylineDuration: 0.5
+  ShowPaylinesInLoop: 1
+  ScatterId: 10
+  BonusId: 12
+  AnticipateScatter: 1
+  AnticipationDuration: 3

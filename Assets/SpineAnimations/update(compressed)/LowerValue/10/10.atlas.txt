@@ -1,0 +1,376 @@
+10.png
+size:2048,2048
+filter:Linear,Linear
+pma:true
+scale:0.5
+10/10_00000
+bounds:889,1845,221,203
+offsets:11,25,250,275
+10/10_00001
+bounds:1821,1641,220,202
+offsets:12,25,250,275
+10/10_00002
+bounds:0,63,220,204
+offsets:12,24,250,275
+rotate:90
+10/10_00003
+bounds:0,944,220,206
+offsets:12,24,250,275
+rotate:90
+10/10_00004
+bounds:0,723,219,209
+offsets:13,23,250,275
+rotate:90
+10/10_00005
+bounds:0,1392,218,214
+offsets:12,21,250,275
+rotate:90
+10/10_00006
+bounds:0,1612,215,218
+offsets:12,20,250,275
+10/10_00007
+bounds:0,1166,206,224
+offsets:14,18,250,275
+10/10_00008
+bounds:1347,1860,188,231
+offsets:21,16,250,275
+rotate:90
+10/10_00009
+bounds:1580,1716,153,239
+offsets:38,15,250,275
+rotate:90
+10/10_00010
+bounds:385,310,93,244
+offsets:70,15,250,275
+10/10_00011
+bounds:1112,1771,84,244
+offsets:84,15,250,275
+rotate:90
+10/10_00012
+bounds:208,968,173,233
+offsets:42,16,250,275
+rotate:90
+10/10_00013
+bounds:220,1834,219,214
+offsets:13,21,250,275
+10/10_00014
+bounds:0,1832,218,216
+offsets:10,21,250,275
+10/10_00015
+bounds:1580,1871,177,239
+offsets:23,13,250,275
+rotate:90
+10/10_00016
+bounds:208,1143,102,247
+offsets:62,11,250,275
+10/10_00017
+bounds:432,720,70,246
+offsets:92,11,250,275
+10/10_00018
+bounds:312,1144,128,246
+offsets:67,11,250,275
+10/10_00019
+bounds:216,314,167,240
+offsets:48,13,250,275
+10/10_00020
+bounds:1112,1857,191,233
+offsets:34,15,250,275
+rotate:90
+10/10_00021
+bounds:662,1843,205,225
+offsets:25,18,250,275
+rotate:90
+10/10_00022
+bounds:441,1835,213,219
+offsets:19,20,250,275
+rotate:90
+10/10_00023
+bounds:0,285,216,214
+offsets:16,22,250,275
+rotate:90
+10/10_00024
+bounds:0,503,218,209
+offsets:13,24,250,275
+rotate:90
+10/10_00025
+bounds:216,1392,218,206
+offsets:12,25,250,275
+rotate:90
+10/10_00026
+bounds:211,762,219,204
+offsets:12,26,250,275
+10/10_00027
+bounds:211,556,219,204
+offsets:12,25,250,275
+10/10_00028
+bounds:220,1612,220,203
+offsets:12,25,250,275
+rotate:90
+10/10_00029
+bounds:1821,1845,221,203
+offsets:11,25,250,275
+10_shadow/10_00000
+bounds:480,177,125,112
+offsets:0,10,125,138
+rotate:90
+10_shadow/10_00001
+bounds:475,63,125,112
+offsets:0,10,125,138
+10_shadow/10_00002
+bounds:425,1581,125,112
+offsets:0,10,125,138
+10_shadow/10_00003
+bounds:206,0,125,114
+offsets:0,9,125,138
+10_shadow/10_00004
+bounds:552,1576,125,116
+offsets:0,8,125,138
+rotate:90
+10_shadow/10_00005
+bounds:442,1188,125,119
+offsets:0,7,125,138
+rotate:90
+10_shadow/10_00006
+bounds:443,1063,123,123
+offsets:0,5,125,138
+10_shadow/10_00007
+bounds:442,1315,118,127
+offsets:2,3,125,138
+10_shadow/10_00008
+bounds:480,304,109,135
+offsets:6,0,125,138
+10_shadow/10_00009
+bounds:1358,1767,91,138
+offsets:15,0,125,138
+rotate:90
+10_shadow/10_00010
+bounds:480,441,63,138
+offsets:29,0,125,138
+10_shadow/10_00011
+bounds:0,2,59,138
+offsets:32,0,125,138
+rotate:90
+10_shadow/10_00012
+bounds:432,581,102,137
+offsets:11,0,125,138
+10_shadow/10_00013
+bounds:619,843,123,120
+offsets:0,6,125,138
+rotate:90
+10_shadow/10_00014
+bounds:356,186,122,122
+offsets:0,6,125,138
+10_shadow/10_00015
+bounds:336,80,104,137
+offsets:5,0,125,138
+rotate:90
+10_shadow/10_00016
+bounds:216,246,66,138
+offsets:25,0,125,138
+rotate:90
+10_shadow/10_00017
+bounds:333,25,53,138
+offsets:37,0,125,138
+rotate:90
+10_shadow/10_00018
+bounds:1498,1720,80,138
+offsets:25,0,125,138
+10_shadow/10_00019
+bounds:425,1695,99,137
+offsets:16,0,125,138
+10_shadow/10_00020
+bounds:424,1444,112,135
+offsets:9,0,125,138
+10_shadow/10_00021
+bounds:526,1703,119,130
+offsets:5,2,125,138
+10_shadow/10_00022
+bounds:538,1450,123,124
+offsets:2,5,125,138
+10_shadow/10_00023
+bounds:563,1197,124,121
+offsets:1,6,125,138
+rotate:90
+10_shadow/10_00024
+bounds:562,1323,125,117
+offsets:0,8,125,138
+rotate:90
+10_shadow/10_00025
+bounds:568,1070,125,115
+offsets:0,9,125,138
+rotate:90
+10_shadow/10_00026
+bounds:504,841,125,113
+offsets:0,10,125,138
+rotate:90
+10_shadow/10_00027
+bounds:504,727,125,112
+offsets:0,11,125,138
+10_shadow/10_00028
+bounds:536,600,125,112
+offsets:0,10,125,138
+rotate:90
+10_shadow/10_00029
+bounds:545,473,125,112
+offsets:0,10,125,138
+rotate:90
+crack_1 01
+bounds:206,273,10,8
+offsets:0,0,11,8
+rotate:90
+crack_1 02
+bounds:647,1780,20,14
+crack_1 03
+bounds:336,190,25,14
+rotate:90
+crack_1 04
+bounds:642,440,31,15
+rotate:90
+crack_1 05
+bounds:575,21,40,20
+rotate:90
+crack_1 06
+bounds:432,556,42,23
+crack_1 07
+bounds:432,556,42,23
+crack_1 08
+bounds:432,556,42,23
+crack_1 09
+bounds:432,556,42,23
+crack_1 10
+bounds:432,556,42,23
+crack_2 01
+bounds:642,427,13,11
+crack_2 02
+bounds:426,0,17,23
+crack_2 03
+bounds:575,0,19,36
+rotate:90
+crack_2 04
+bounds:545,449,22,48
+rotate:90
+crack_2 05
+bounds:333,0,23,58
+rotate:90
+crack_2 06
+bounds:333,0,23,58
+rotate:90
+crack_2 07
+bounds:333,0,23,58
+rotate:90
+crack_2 08
+bounds:333,0,23,58
+rotate:90
+crack_2 09
+bounds:333,0,23,58
+rotate:90
+crack_2 10
+bounds:333,0,23,58
+rotate:90
+crack_3 01
+bounds:536,590,7,8
+crack_3 02
+bounds:424,1431,16,11
+crack_3 03
+bounds:619,414,23,11
+crack_3 04
+bounds:591,414,26,11
+crack_3 05
+bounds:591,414,26,11
+crack_3 06
+bounds:591,414,26,11
+crack_3 07
+bounds:591,414,26,11
+crack_3 08
+bounds:591,414,26,11
+crack_3 09
+bounds:591,414,26,11
+crack_3 10
+bounds:591,414,26,11
+crack_4 02
+bounds:504,720,5,21
+offsets:0,1,5,25
+rotate:90
+crack_4 03
+bounds:538,968,9,27
+offsets:0,0,9,30
+crack_4 04
+bounds:529,0,14,27
+offsets:0,0,14,30
+rotate:90
+crack_4 05
+bounds:336,217,18,27
+offsets:0,0,19,30
+crack_4 06
+bounds:393,0,23,31
+offsets:0,0,24,32
+rotate:90
+crack_4 07
+bounds:538,1026,28,35
+crack_4 08
+bounds:647,1796,31,37
+crack_4 09
+bounds:647,1796,31,37
+crack_4 10
+bounds:647,1796,31,37
+debris 02
+bounds:644,414,11,13
+offsets:0,1,11,15
+rotate:90
+debris 03
+bounds:445,3,19,20
+offsets:0,0,19,21
+debris 04
+bounds:538,997,28,27
+offsets:0,1,28,29
+debris 05
+bounds:529,16,44,45
+offsets:0,0,44,46
+debris 06
+bounds:595,427,44,45
+offsets:0,1,44,46
+rotate:90
+debris 07
+bounds:473,8,53,54
+rotate:90
+debris 08
+bounds:140,0,61,61
+offsets:0,0,61,62
+debris 09
+bounds:602,26,70,68
+offsets:0,1,70,70
+debris 10
+bounds:594,246,79,76
+debris 11
+bounds:602,96,79,76
+rotate:90
+debris 12
+bounds:682,327,85,81
+rotate:90
+debris 13
+bounds:591,324,89,88
+offsets:0,0,90,88
+debris 14
+bounds:659,414,97,96
+debris 15
+bounds:650,620,106,102
+rotate:90
+debris 16
+bounds:659,512,106,102
+rotate:90
+debris 17
+bounds:631,728,113,104
+rotate:90
+debris 18
+bounds:568,968,120,100
+debris 19
+bounds:443,968,93,93
+debris 20
+bounds:211,551,3,3
+debris 21
+bounds:211,551,3,3
+lower_bg
+bounds:206,116,128,128
+shadow
+bounds:594,177,86,67
+offsets:2,1,89,83

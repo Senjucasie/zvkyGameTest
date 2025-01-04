@@ -1,0 +1,207 @@
+congratulations.png
+size:1024,1024
+filter:Linear,Linear
+pma:true
+scale:0.25
+a
+bounds:318,596,21,29
+a2
+bounds:318,565,21,29
+bg
+bounds:0,91,303,190
+rotate:90
+c
+bounds:515,693,19,29
+frame_gold
+bounds:325,767,327,257
+offsets:0,12,327,269
+frame_gold_shine 1
+bounds:192,185,13,209
+offsets:1,0,14,209
+frame_gold_shine 10
+bounds:325,724,10,209
+offsets:1,0,13,209
+rotate:90
+frame_gold_shine 11
+bounds:685,815,9,209
+offsets:1,0,12,209
+frame_gold_shine 4
+bounds:325,736,13,209
+offsets:1,0,14,209
+rotate:90
+frame_gold_shine 5
+bounds:302,487,14,209
+offsets:1,0,15,209
+frame_gold_shine 6
+bounds:325,751,14,209
+offsets:1,0,15,209
+rotate:90
+frame_gold_shine 7
+bounds:654,815,14,209
+offsets:1,0,15,209
+frame_gold_shine 8
+bounds:670,815,13,209
+offsets:1,0,15,209
+frame_gold_shine 9
+bounds:207,185,12,209
+offsets:1,0,15,209
+g
+bounds:318,534,19,29
+gem
+bounds:192,104,37,37
+gem_shine 02
+bounds:121,79,10,17
+offsets:0,1,12,20
+rotate:90
+gem_shine 03
+bounds:277,342,17,26
+offsets:0,0,18,27
+rotate:90
+gem_shine 04
+bounds:0,2,22,30
+offsets:0,0,23,31
+rotate:90
+gem_shine 05
+bounds:479,696,26,34
+offsets:0,0,27,34
+rotate:90
+gem_shine 06
+bounds:403,692,30,36
+offsets:0,0,31,36
+rotate:90
+gem_shine 07
+bounds:325,689,33,37
+offsets:0,0,34,37
+rotate:90
+gem_shine 08
+bounds:231,109,34,37
+gem_shine 09
+bounds:441,692,30,36
+offsets:1,0,31,36
+rotate:90
+gem_shine 10
+bounds:277,361,27,33
+offsets:1,1,28,34
+gem_shine 11
+bounds:536,693,22,30
+offsets:1,1,23,31
+rotate:90
+gem_shine 12
+bounds:274,314,18,26
+offsets:1,1,19,27
+gem_shine 13
+bounds:641,748,11,17
+offsets:2,2,13,20
+gem_top_left
+bounds:568,705,12,10
+gem_top_left_fx
+bounds:364,688,37,34
+offsets:4,4,45,42
+gold_design_bottom_left
+bounds:696,860,42,58
+gold_design_bottom_right
+bounds:751,977,47,54
+rotate:90
+gold_design_top_left
+bounds:807,981,43,57
+rotate:90
+gold_design_top_right
+bounds:55,30,46,55
+rotate:90
+i
+bounds:95,0,6,28
+l
+bounds:77,0,16,28
+leafs_right
+bounds:866,980,53,44
+n
+bounds:345,658,17,29
+n2
+bounds:345,627,17,29
+o
+bounds:318,658,25,29
+o2
+bounds:318,627,25,29
+r
+bounds:318,503,19,29
+ring_fx 11
+bounds:192,91,12,11
+offsets:4,10,24,24
+ring_fx 12
+bounds:32,2,23,22
+offsets:17,20,50,44
+ring_fx 13
+bounds:192,143,34,40
+offsets:14,10,55,54
+ring_fx 14
+bounds:699,769,42,44
+offsets:10,8,57,58
+ring_fx 15
+bounds:975,979,45,49
+offsets:9,6,58,60
+rotate:90
+ring_fx 16
+bounds:921,978,46,52
+offsets:9,5,59,63
+rotate:90
+ring_fx 17
+bounds:536,717,48,51
+offsets:7,5,59,64
+rotate:90
+ring_fx 18
+bounds:221,237,51,51
+offsets:6,4,61,61
+ring_fx 19
+bounds:696,974,53,50
+offsets:6,5,63,62
+ring_fx 20
+bounds:221,344,54,50
+offsets:5,4,64,62
+ring_fx 21
+bounds:0,26,53,50
+offsets:5,4,64,61
+ring_fx 22
+bounds:221,290,51,52
+offsets:4,4,61,62
+ring_fx 23
+bounds:696,920,51,52
+offsets:4,5,60,63
+ring_fx 24
+bounds:221,186,51,49
+offsets:4,7,60,61
+ring_fx 25
+bounds:589,718,50,47
+offsets:5,6,61,58
+ring_fx 26
+bounds:654,766,47,43
+offsets:5,10,58,58
+rotate:90
+ring_fx 27
+bounds:228,148,39,36
+offsets:8,11,56,51
+ring_fx 28
+bounds:364,666,28,20
+offsets:11,16,52,39
+ring_fx 29
+bounds:318,491,12,10
+offsets:11,6,32,20
+ring_gold
+bounds:696,815,44,43
+offsets:13,9,66,62
+s
+bounds:341,596,18,29
+shine1
+bounds:0,698,323,326
+offsets:6,0,329,326
+shine2
+bounds:0,396,300,300
+shine3
+bounds:302,472,13,13
+t
+bounds:364,636,18,28
+t2
+bounds:341,566,18,28
+text_1
+bounds:0,78,119,11
+u
+bounds:57,0,18,28

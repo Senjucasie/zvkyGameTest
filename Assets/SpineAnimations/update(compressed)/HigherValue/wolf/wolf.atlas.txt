@@ -1,0 +1,202 @@
+wolf.png
+size:1024,1024
+filter:Linear,Linear
+pma:true
+BG_Fx/fx 00
+bounds:392,904,100,100
+offsets:1,1,102,102
+BG_Fx/fx 02
+bounds:19,497,100,100
+offsets:1,1,102,102
+BG_Fx/fx 04
+bounds:494,904,100,100
+offsets:1,1,102,102
+BG_Fx/fx 06
+bounds:19,395,100,100
+offsets:1,1,102,102
+BG_Fx/fx 08
+bounds:596,904,100,100
+offsets:1,1,102,102
+BG_Fx/fx 10
+bounds:698,922,100,100
+offsets:1,1,102,102
+BG_Fx/fx 12
+bounds:800,922,100,100
+offsets:1,1,102,102
+BG_Fx/fx 14
+bounds:902,922,100,100
+offsets:1,1,102,102
+BG_Fx/fx 16
+bounds:19,293,100,100
+offsets:1,1,102,102
+BG_Fx/fx 18
+bounds:2,191,100,100
+offsets:1,1,102,102
+BG_Fx/fx 20
+bounds:2,89,100,100
+offsets:1,1,102,102
+BG_Fx/fx 22
+bounds:121,497,100,100
+offsets:1,1,102,102
+BG_Fx/fx 24
+bounds:121,395,100,100
+offsets:1,1,102,102
+BG_Fx/fx 26
+bounds:121,293,100,100
+offsets:1,1,102,102
+BG_Fx/fx 28
+bounds:104,191,100,100
+offsets:1,1,102,102
+BG_Fx/fx 30
+bounds:104,89,100,100
+offsets:1,1,102,102
+BG_Fx/fx 32
+bounds:157,642,100,100
+offsets:1,1,102,102
+BG_Fx/fx 34
+bounds:189,774,100,100
+offsets:1,1,102,102
+BG_Fx/fx 36
+bounds:291,787,100,100
+offsets:1,1,102,102
+BG_Fx/fx 38
+bounds:393,802,100,100
+offsets:1,1,102,102
+BG_Fx/fx 40
+bounds:495,802,100,100
+offsets:1,1,102,102
+BG_Fx/fx 42
+bounds:597,802,100,100
+offsets:1,1,102,102
+BG_Fx/fx 44
+bounds:699,820,100,100
+offsets:1,1,102,102
+BG_Fx/fx 46
+bounds:801,820,100,100
+offsets:1,1,102,102
+BG_Fx/fx 48
+bounds:903,820,100,100
+offsets:1,1,102,102
+BG_Fx/fx 50
+bounds:699,718,100,100
+offsets:1,1,102,102
+BG_Fx/fx 52
+bounds:801,718,100,100
+offsets:1,1,102,102
+BG_Fx/fx 54
+bounds:903,718,100,100
+offsets:1,1,102,102
+BG_Fx/fx 56
+bounds:206,191,100,100
+offsets:1,1,102,102
+BG_Fx/fx 58
+bounds:206,89,100,100
+offsets:1,1,102,102
+Layer 1
+bounds:676,1012,1,1
+bottom
+bounds:392,1006,256,16
+bottom_left
+bounds:513,773,27,27
+bottom_right
+bounds:189,744,28,27
+rotate:90
+right
+bounds:2,341,15,256
+top_left
+bounds:542,774,27,26
+top_right
+bounds:218,744,28,26
+rotate:90
+wolf/White-Smoke 1
+bounds:679,1008,17,14
+offsets:2,2,20,18
+wolf/White-Smoke 2
+bounds:477,773,34,27
+offsets:1,2,36,31
+wolf/White-Smoke 3
+bounds:439,776,36,24
+offsets:2,2,40,28
+wolf/White-Smoke 4
+bounds:259,709,33,34
+offsets:2,3,37,38
+wolf/wolf_body_lower
+bounds:2,876,207,146
+offsets:57,0,270,163
+wolf/wolf_body_middle
+bounds:211,889,179,133
+offsets:8,0,202,133
+wolf/wolf_body_upper
+bounds:2,744,185,130
+offsets:0,0,187,153
+wolf/wolf_ear_left
+bounds:2,7,64,80
+offsets:4,0,68,80
+wolf/wolf_ear_light
+bounds:253,23,50,64
+wolf/wolf_ear_right
+bounds:133,12,62,75
+offsets:0,0,63,75
+wolf/wolf_eye_left
+bounds:571,776,23,24
+wolf/wolf_eye_right
+bounds:259,642,23,22
+wolf/wolf_eyebrow_left
+bounds:259,666,41,26
+rotate:90
+wolf/wolf_eyebrow_right
+bounds:393,779,44,21
+wolf/wolf_face
+bounds:2,599,153,143
+offsets:0,0,153,164
+wolf/wolf_face_light_left
+bounds:68,10,63,77
+wolf/wolf_face_light_middle
+bounds:246,745,49,27
+wolf/wolf_face_light_right
+bounds:157,600,40,56
+rotate:90
+wolf/wolf_lower_eyelid_left
+bounds:596,780,23,20
+wolf/wolf_lower_eyelid_right
+bounds:1004,1000,22,17
+rotate:90
+wolf/wolf_lower_jaw
+bounds:215,607,53,33
+offsets:0,0,53,50
+wolf/wolf_lower_teeth
+bounds:253,2,40,19
+wolf/wolf_nose
+bounds:197,15,54,72
+wolf/wolf_pupil_left
+bounds:211,876,13,11
+wolf/wolf_pupil_right
+bounds:226,876,11,11
+wolf/wolf_whisker_left_1
+bounds:650,1015,27,7
+offsets:5,0,32,7
+wolf/wolf_whisker_left_2
+bounds:2,322,17,2
+offsets:6,2,24,5
+rotate:90
+wolf/wolf_whisker_left_3
+bounds:295,2,19,7
+offsets:6,0,25,7
+rotate:90
+wolf/wolf_whisker_left_4
+bounds:291,774,11,4
+offsets:7,2,19,7
+rotate:90
+wolf/wolf_whisker_right_1
+bounds:68,2,19,6
+offsets:1,1,29,9
+wolf/wolf_whisker_right_2
+bounds:650,1006,24,7
+offsets:0,0,28,7
+wolf/wolf_whisker_right_3
+bounds:2,2,17,3
+offsets:0,0,19,3
+wolf/wolf_whisker_right_4
+bounds:305,71,16,1
+offsets:1,2,23,4
+rotate:90

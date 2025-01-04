@@ -1,0 +1,143 @@
+eagle.png
+size:1024,1024
+filter:Linear,Linear
+pma:true
+BG_Fx/fx 00
+bounds:403,895,100,100
+offsets:1,1,102,102
+BG_Fx/fx 02
+bounds:34,486,100,100
+offsets:1,1,102,102
+BG_Fx/fx 04
+bounds:505,895,100,100
+offsets:1,1,102,102
+BG_Fx/fx 06
+bounds:34,384,100,100
+offsets:1,1,102,102
+BG_Fx/fx 08
+bounds:152,722,100,100
+offsets:1,1,102,102
+BG_Fx/fx 10
+bounds:152,620,100,100
+offsets:1,1,102,102
+BG_Fx/fx 12
+bounds:607,895,100,100
+offsets:1,1,102,102
+BG_Fx/fx 14
+bounds:709,913,100,100
+offsets:1,1,102,102
+BG_Fx/fx 16
+bounds:811,913,100,100
+offsets:1,1,102,102
+BG_Fx/fx 18
+bounds:913,913,100,100
+offsets:1,1,102,102
+BG_Fx/fx 20
+bounds:34,282,100,100
+offsets:1,1,102,102
+BG_Fx/fx 22
+bounds:17,180,100,100
+offsets:1,1,102,102
+BG_Fx/fx 24
+bounds:17,78,100,100
+offsets:1,1,102,102
+BG_Fx/fx 26
+bounds:254,778,100,100
+offsets:1,1,102,102
+BG_Fx/fx 28
+bounds:254,676,100,100
+offsets:1,1,102,102
+BG_Fx/fx 30
+bounds:254,574,100,100
+offsets:1,1,102,102
+BG_Fx/fx 32
+bounds:152,518,100,100
+offsets:1,1,102,102
+BG_Fx/fx 34
+bounds:136,416,100,100
+offsets:1,1,102,102
+BG_Fx/fx 36
+bounds:136,314,100,100
+offsets:1,1,102,102
+BG_Fx/fx 38
+bounds:254,472,100,100
+offsets:1,1,102,102
+BG_Fx/fx 40
+bounds:238,370,100,100
+offsets:1,1,102,102
+BG_Fx/fx 42
+bounds:238,268,100,100
+offsets:1,1,102,102
+BG_Fx/fx 44
+bounds:136,212,100,100
+offsets:1,1,102,102
+BG_Fx/fx 46
+bounds:119,110,100,100
+offsets:1,1,102,102
+BG_Fx/fx 48
+bounds:238,166,100,100
+offsets:1,1,102,102
+BG_Fx/fx 50
+bounds:356,778,100,100
+offsets:1,1,102,102
+BG_Fx/fx 52
+bounds:356,676,100,100
+offsets:1,1,102,102
+BG_Fx/fx 54
+bounds:356,574,100,100
+offsets:1,1,102,102
+BG_Fx/fx 56
+bounds:356,472,100,100
+offsets:1,1,102,102
+BG_Fx/fx 58
+bounds:340,370,100,100
+offsets:1,1,102,102
+bottom
+bounds:0,330,256,16
+rotate:90
+bottom_left
+bounds:458,755,27,27
+bottom_right
+bounds:190,81,28,27
+eagle/Lower Beak
+bounds:340,175,68,56
+offsets:0,1,68,61
+eagle/eye
+bounds:490,827,24,23
+eagle/eye_ball
+bounds:517,863,39,30
+offsets:9,4,53,34
+eagle/head
+bounds:233,880,168,133
+offsets:0,0,182,133
+eagle/lower_body
+bounds:0,588,234,150
+rotate:90
+eagle/lower_eye_lid
+bounds:340,233,74,51
+offsets:0,28,113,80
+eagle/neck
+bounds:0,824,231,189
+offsets:8,0,239,219
+eagle/tougue
+bounds:458,852,57,41
+eagle/upper_beak
+bounds:340,286,88,82
+offsets:19,0,107,82
+eagle/upper_beak_patch
+bounds:119,64,69,44
+eagle/upper_eye_lid
+bounds:458,784,66,30
+rotate:90
+left
+bounds:403,997,16,256
+rotate:90
+right
+bounds:0,72,15,256
+top
+bounds:18,330,256,14
+rotate:90
+top_left
+bounds:458,727,27,26
+top_right
+bounds:558,867,28,26

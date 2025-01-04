@@ -1,0 +1,130 @@
+super_win.png
+size:1024,1024
+filter:Linear,Linear
+pma:true
+amount_panel
+bounds:601,947,329,75
+offsets:1,1,331,77
+bg_shine
+bounds:2,301,245,256
+circle
+bounds:558,851,26,23
+offsets:0,0,27,23
+e
+bounds:805,682,105,123
+offsets:1,1,111,125
+rotate:90
+e_glow
+bounds:812,789,150,156
+offsets:10,12,171,177
+horn shine 05
+bounds:776,396,40,92
+offsets:1,12,48,111
+rotate:90
+horn shine 07
+bounds:376,415,82,162
+offsets:22,7,109,171
+horn shine 09
+bounds:558,704,114,192
+offsets:21,5,140,198
+rotate:90
+horn shine 11
+bounds:338,732,142,218
+offsets:2,9,148,228
+rotate:90
+horn shine 13
+bounds:2,53,141,246
+offsets:5,4,147,251
+horn shine 15
+bounds:145,46,134,253
+offsets:6,1,145,255
+horn shine 17
+bounds:338,876,146,261
+offsets:3,3,153,265
+rotate:90
+horn shine 19
+bounds:289,579,151,184
+offsets:6,1,161,186
+rotate:90
+horn shine 21
+bounds:249,375,125,182
+offsets:8,1,135,184
+horn shine 23
+bounds:668,521,100,181
+offsets:6,1,107,183
+horn shine 25
+bounds:249,302,71,172
+offsets:6,1,79,177
+rotate:90
+horn shine 27
+bounds:580,232,11,14
+offsets:7,7,19,22
+horn_left
+bounds:475,4,127,135
+i
+bounds:2,7,44,98
+offsets:1,1,46,100
+rotate:90
+i_glow
+bounds:281,2,79,133
+offsets:10,10,99,153
+lower_horn_left
+bounds:752,713,51,105
+n
+bounds:2,559,285,236
+offsets:1,1,287,238
+n_glow
+bounds:593,229,139,138
+offsets:10,10,159,159
+p
+bounds:887,565,102,115
+offsets:1,17,104,133
+p_glow
+bounds:626,369,148,150
+offsets:10,10,170,171
+r
+bounds:362,4,111,131
+offsets:13,1,125,133
+r_glow
+bounds:460,405,158,164
+offsets:9,10,179,184
+rotate:90
+s
+bounds:776,438,105,121
+offsets:1,1,107,123
+s_glow
+bounds:437,248,154,155
+offsets:10,12,174,177
+shine
+bounds:289,750,46,45
+offsets:1,2,49,50
+string_right
+bounds:601,820,125,209
+offsets:1,2,128,213
+rotate:90
+string_right_left
+bounds:475,704,26,68
+offsets:2,0,29,68
+rotate:90
+string_right_right
+bounds:932,950,27,72
+offsets:0,1,27,73
+u
+bounds:770,561,115,119
+offsets:1,1,117,121
+u_glow
+bounds:281,137,163,154
+offsets:10,10,183,174
+rotate:90
+w
+bounds:437,141,141,105
+offsets:1,1,143,107
+w_glow
+bounds:475,565,191,137
+offsets:10,11,212,157
+wood
+bounds:2,797,334,225
+offsets:1,1,336,227
+wood_bg_left
+bounds:734,223,96,144
+offsets:1,1,98,146
