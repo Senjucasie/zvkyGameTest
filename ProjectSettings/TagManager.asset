@@ -50,3 +50,6 @@ TagManager:
   - name: payline
     uniqueID: 2520444037
     locked: 0
+  - name: Loading
+    uniqueID: 842473187
+    locked: 0

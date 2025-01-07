@@ -140,7 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteNode: {fileID: 6648079422425983131}
   spineNode: {fileID: 8080800001044069810}
-  _audioClip: {fileID: 8300000, guid: 49659f0b177bae44c93edd02a123ee7b, type: 3}
+  _audioClip: {fileID: 8300000, guid: de3eda30102914541bee881e8078b795, type: 3}
   isSpecialSymbol: 0
   paylineAnimationController: {fileID: 108678634706109691}
 --- !u!1 &8080800001044069810
