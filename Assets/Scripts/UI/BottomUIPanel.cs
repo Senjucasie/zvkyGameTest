@@ -13,17 +13,14 @@ public class BottomUIPanel : MonoBehaviour
     [SerializeField] private TextMeshProUGUI winAmount;
     [SerializeField] private TextMeshProUGUI autoPlayCountTxt;
 
-    [SerializeField] private List<GameObject> uiIButtonPopups;
     [SerializeField] private GameObject uiIButtonShow;
     [SerializeField] private GameObject[] autoPlayInfoPopups;
     [SerializeField] private GameObject[] turboPlayInfoPopups;
-    [SerializeField] private GameObject autoPlayPopup;
-    [SerializeField] private GameObject autoPlayStopBtnVisual;
+
 
 
     [SerializeField] private Button plusBtn;
     [SerializeField] private Button minusBtn;
-    [SerializeField] private Button MaxBetBtn;
     [SerializeField] private Button infoBtn;
     [SerializeField] private Button spinButton;
     [SerializeField] private Button slamStopButton;
@@ -108,7 +105,6 @@ public class BottomUIPanel : MonoBehaviour
         infoBtn.interactable = enable;
         plusBtn.interactable = enable;
         minusBtn.interactable = enable;
-        MaxBetBtn.interactable = enable;
     }
 
     private void SetButtonForNormalState()
@@ -197,7 +193,7 @@ public class BottomUIPanel : MonoBehaviour
         Audiomanager.Instance.PlayUiSfx(SFX.Button_Click);
         _currentBetIndex = GameConstants.creditValue.Count - 1;
         UpdateCreditValue();
-        MaxBetBtn.interactable = false;
+
     }
 
     public void ResetWinAndDisableSlamStop() // Contains Button Edge Cases
@@ -248,12 +244,12 @@ public class BottomUIPanel : MonoBehaviour
         if (_currentBetIndex == GameConstants.creditValue.Count - 1)
         {
             plusBtn.interactable = false;
-            MaxBetBtn.interactable = false;
+
         }
         else
         {
             plusBtn.interactable = true;
-            MaxBetBtn.interactable = true;
+   
         }
         if (_currentBetIndex == 0)
         {
@@ -281,24 +277,7 @@ public class BottomUIPanel : MonoBehaviour
         }
         UpdateCreditValue();
     }
-    public void OnClickPreviousInfo()
-    {
-        if (uiIButtonPopups.Count - 1 == IButtonValue) return;
-        Audiomanager.Instance.PlayUiSfx(SFX.Button_Click);
-        uiIButtonPopups[IButtonValue].gameObject.SetActive(false);
-        IButtonValue++;
-        uiIButtonPopups[IButtonValue].gameObject.SetActive(true);
-        EventManager.InvokeUpdateCreditValueIndex(_currentBetIndex);
-    }
-    public void OnClickNextInfo()
-    {
-        if (IButtonValue == 0) return;
-        Audiomanager.Instance.PlayUiSfx(SFX.Button_Click);
-        uiIButtonPopups[IButtonValue].gameObject.SetActive(false);
-        IButtonValue--;
-        uiIButtonPopups[IButtonValue].gameObject.SetActive(true);
-        EventManager.InvokeUpdateCreditValueIndex(_currentBetIndex);
-    }
+
 
     public void ResumeUpdateCreditValue(int totalBet)
     {

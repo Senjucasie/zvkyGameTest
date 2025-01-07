@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
-  m_Name: FreeSpin_export_SkeletonData
+  m_Name: bigwin_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: d98ee55d9d9f3b5449bc7e5925e84a2d, type: 2}
-  scale: 0.8
-  skeletonJSON: {fileID: 4900000, guid: 3239b0a61fb5e6c4aa46addfdfd5d05b, type: 3}
+  - {fileID: 11400000, guid: 770d53b6052059240ba8a570d1b12f7c, type: 2}
+  scale: 0.01
+  skeletonJSON: {fileID: 4900000, guid: 10fa618c38532d743829e8367e4de81b, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0

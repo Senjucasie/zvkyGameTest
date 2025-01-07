@@ -35,29 +35,8 @@ public class RestartSpineOnEnable : MonoBehaviour
     void OnEnable()
     {
         animationState.ClearTracks();
-        /*if (skeletonAn)
-        {
-            skeletonAn.skeleton.SetToSetupPose();
-        }
-        else
-        {
-            skeletonGra.Skeleton.SetToSetupPose();
-        }*/
-
         animationTrack = animationState.SetAnimation(0, startAnimation, isLooping);
-/*
-        if (UIPanel.IsTurboButtonClicked && Controller.Instance.CurrentGameState == Controller.GameStatesType.AutoSpin)
-            StartCoroutine(PauseAnimationAfterStartInAutoTurbo());*/
     }
 
-    /*IEnumerator PauseAnimationAfterStartInAutoTurbo()
-    {
-        yield return new WaitForSeconds(0.0f);
-
-        // pause the animation abruptly
-        if (animationTrack != null)
-        {
-            animationTrack.TimeScale = 0f; // Pause the animation
-        }
-    }*/
+  
 }
