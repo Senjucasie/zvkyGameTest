@@ -30,7 +30,6 @@ RectTransform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1722857553023876227}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -78,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 6db6f581217c4a44eb4fb4d1ae8aebd4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74d50cd189406394fafb392c024bcf30, type: 3}
   m_Color: {r: 0.9811321, g: 0.9811321, b: 0.9811321, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,7 +120,6 @@ RectTransform:
   - {fileID: 2596806731241527118}
   - {fileID: 8133773700140372337}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -143,6 +141,7 @@ MonoBehaviour:
   spriteNode: {fileID: 6648079422425983131}
   spineNode: {fileID: 8080800001044069810}
   _audioClip: {fileID: 8300000, guid: 49659f0b177bae44c93edd02a123ee7b, type: 3}
+  isSpecialSymbol: 0
   paylineAnimationController: {fileID: 108678634706109691}
 --- !u!1 &8080800001044069810
 GameObject:
@@ -172,13 +171,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8080800001044069810}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.2, y: 0, z: 0}
   m_LocalScale: {x: 99, y: 99, z: 99}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1722857553023876227}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6253208947511648538
 MeshFilter:
@@ -208,11 +207,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fcc2301bb7eabc449957a1ba3de3aaab, type: 2}
-  - {fileID: 2100000, guid: 545565781f0741a498d88409bb3d3c45, type: 2}
-  - {fileID: 2100000, guid: fcc2301bb7eabc449957a1ba3de3aaab, type: 2}
-  - {fileID: 2100000, guid: 545565781f0741a498d88409bb3d3c45, type: 2}
-  - {fileID: 2100000, guid: fcc2301bb7eabc449957a1ba3de3aaab, type: 2}
+  - {fileID: 2100000, guid: 40d4488c53b50a746b1ef2e8f61a23b1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -246,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: f78d8686b3bf9a242be586cf53bf9495, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 67970f2856d705c4fa0d48b7e6b9e842, type: 2}
   initialSkinName: 
   fixPrefabOverrideViaMeshFilter: 2
   initialFlipX: 0
@@ -269,8 +264,6 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  updateTiming: 1
-  unscaledTime: 0
   _animationName: idle
   loop: 1
   timeScale: 1

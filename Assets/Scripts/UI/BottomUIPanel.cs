@@ -97,7 +97,7 @@ public class BottomUIPanel : MonoBehaviour
         }
         else
         {
-            ErrorHandler.Instance.ShowErrorPopup(ErrorType.LOW_BALANCE);
+            Debug.LogError("balnce is not sufficient to play game");
         }
     }
 
