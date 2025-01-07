@@ -166,7 +166,7 @@ public class PaylineController : MonoBehaviour
     }
     public void HidePaylineVisual(int paylineid)
     {
-        _paylineVisuals.HidePayline(paylineid);
+        //_paylineVisuals.HidePayline(paylineid);
         _paylineVisuals.HidePaylineAmount();
     }
 

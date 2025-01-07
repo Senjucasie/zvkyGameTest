@@ -210,6 +210,7 @@ namespace FSM.GamePlay.State
             }
             else
             {
+                _paylineController.ResetPayLine();
                 GameController.DeactivateFreeGame();
             }
         }

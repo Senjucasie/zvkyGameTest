@@ -15,8 +15,6 @@ public class FreeSpinManager : MonoBehaviour
     [SerializeField] private GameObject freeSpinOutrPopUp;
     [SerializeField] private GameObject SpinButton;
     [SerializeField] private GameObject BGImage;
-    [SerializeField] private GameObject FreeSpinReelFrame;
-    [SerializeField] private GameObject BaseReelFrame;
     [SerializeField] private GameObject FreeSpinTextNode;
 
     [SerializeField] private MultipleFontHandler totalFreeSpinText;
@@ -73,9 +71,7 @@ public class FreeSpinManager : MonoBehaviour
         Audiomanager.Instance.PlayMusic(Music.FreeBgm);
         SpinButton.GetComponent<Button>().interactable = false;
         BGImage.SetActive(true);
-        FreeSpinReelFrame.SetActive(true);
         Debug.Log("transition FreespinUi");
-        BaseReelFrame.GetComponent<Image>().enabled = false;
         FreeSpinTextNode.SetActive(true);
     }
     private void RemoveFreeSpinUi()
@@ -84,8 +80,6 @@ public class FreeSpinManager : MonoBehaviour
         Audiomanager.Instance.PlayMusic(Music.Bgm);
         SpinButton.GetComponent<Button>().interactable = true;
         BGImage.SetActive(false);
-        FreeSpinReelFrame.SetActive(false);
-        BaseReelFrame.GetComponent<Image>().enabled = true;
         FreeSpinTextNode.SetActive(false);
         EventManager.InvokeResetWinData();
     }

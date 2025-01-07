@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class PaylineVisuals : MonoBehaviour
 {
-    [SerializeField] private GameObject[] paylines;
+    //[SerializeField] private GameObject[] paylines;
     [SerializeField] private GameObject _paylineAmountPrefab;
 
     [Header("Total Win Panel")]
@@ -23,6 +23,8 @@ public class PaylineVisuals : MonoBehaviour
 
     private Dictionary<int, GameObject> normalPaylineAmounts;
     private Dictionary<int, GameObject> featurePaylineAmounts;
+
+    [SerializeField] private PayLineAnimationHandler _paylineAnimationHandler;
 
     private void Awake()
     {
@@ -100,19 +102,21 @@ public class PaylineVisuals : MonoBehaviour
 
     public void ShowPayline(int paylineId)
     {
-        paylines[paylineId].SetActive(true);
+        _paylineAnimationHandler.PlayAnimation(paylineId);
+        //paylines[paylineId].SetActive(true);
         Audiomanager.Instance.PlaySfx(SFX.Payline);
     }
 
     public void HidePayline()
     {
-        foreach (GameObject payline in paylines)
-            payline.SetActive(false);
+        _paylineAnimationHandler.HideAnimation();
+        //foreach (GameObject payline in paylines)
+        //    payline.SetActive(false);
     }
 
     public void HidePayline(int id)
     {
-        paylines[id].SetActive(false);
+        //paylines[id].SetActive(false);
     }
 
     public void ShowPaylineAmount(PaylineType paylieType, int paylineId)

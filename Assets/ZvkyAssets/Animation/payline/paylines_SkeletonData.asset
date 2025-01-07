@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
-  m_Name: Popups_SkeletonData
+  m_Name: paylines_SkeletonData
   m_EditorClassIdentifier: 
   atlasAssets:
-  - {fileID: 11400000, guid: 16735cbb51b45004495a503eb9dc6f6f, type: 2}
-  scale: 1
-  skeletonJSON: {fileID: 4900000, guid: c6d3ffdded1ea294bb8c6577275b0248, type: 3}
+  - {fileID: 11400000, guid: 24dfbaa0820d8e94e85023a9e771a42e, type: 2}
+  scale: 0.01
+  skeletonJSON: {fileID: 4900000, guid: f5d42b6fe0b3ae7488cbc2d8dd140021, type: 3}
   isUpgradingBlendModeMaterials: 0
   blendModeMaterials:
     requiresBlendModeMaterials: 0

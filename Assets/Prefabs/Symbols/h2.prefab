@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0f1cd295884d23e46a816ecb1fa24b74, type: 2}
+  - {fileID: 2100000, guid: d4712cbe01da05f4abe449e0287d08fc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
     materialsInsideMask: []
     materialsOutsideMask: []
   disableRenderingOnOverride: 1
-  _animationName: idle
+  _animationName: win
   loop: 1
   timeScale: 1
 --- !u!114 &4831612303368594060
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spineGameObject: {fileID: 3120457043651957999}
-  startAnimation: idle
+  startAnimation: win
   isLooping: 1
 --- !u!114 &1462961264524942200
 MonoBehaviour:

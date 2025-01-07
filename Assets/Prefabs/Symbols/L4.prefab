@@ -207,7 +207,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 04ee21bb464460e40849e52f3e55635d, type: 2}
+  - {fileID: 2100000, guid: 9a5b5b629831a4a4e89b7aeb7031c368, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spineGameObject: {fileID: 5740056192095114709}
-  startAnimation: idle
+  startAnimation: WIN
   isLooping: 1
 --- !u!114 &3645415384106270291
 MonoBehaviour:

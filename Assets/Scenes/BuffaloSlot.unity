@@ -18355,6 +18355,165 @@ MonoBehaviour:
   zPosition: 1
   overrideAlpha: 1
   hierarchy: {fileID: 1564962122}
+--- !u!1 &1320350405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1320350409}
+  - component: {fileID: 1320350408}
+  - component: {fileID: 1320350407}
+  - component: {fileID: 1320350406}
+  - component: {fileID: 1320350410}
+  m_Layer: 0
+  m_Name: Paylines
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1320350406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320350405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonDataAsset: {fileID: 11400000, guid: 65d6ce2282b65574cb7f16456ba87ec2, type: 2}
+  initialSkinName: 
+  fixPrefabOverrideViaMeshFilter: 2
+  initialFlipX: 0
+  initialFlipY: 0
+  updateWhenInvisible: 0
+  separatorSlotNames: []
+  zSpacing: 0
+  useClipping: 1
+  immutableTriangles: 0
+  pmaVertexColors: 1
+  clearStateOnDisable: 1
+  tintBlack: 0
+  singleSubmesh: 0
+  fixDrawOrder: 0
+  addNormals: 0
+  calculateTangents: 0
+  maskInteraction: 0
+  maskMaterials:
+    materialsMaskDisabled: []
+    materialsInsideMask: []
+    materialsOutsideMask: []
+  disableRenderingOnOverride: 1
+  _animationName: 
+  loop: 1
+  timeScale: 1
+--- !u!23 &1320350407
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320350405}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1774523259
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1320350408
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320350405}
+  m_Mesh: {fileID: 0}
+--- !u!224 &1320350409
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320350405}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 108, y: 108, z: 108}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5891688116003136909}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1320350410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320350405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cd593eba6264b8428bd8a437cfe7e6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _paylineAnimations:
+  - payline_1
+  - payline_2
+  - payline_3
+  - payline_4
+  - payline_6
+  - payline_6
+  - payline_7
+  - payline_8
+  - payline_9
+  - payline_10
+  - payline_11
+  - payline_12
+  - payline_13
+  - payline_14
+  - payline_15
+  - payline_16
+  - payline_17
+  - payline_18
+  - payline_19
+  - payline_20
 --- !u!1 &1320392816
 GameObject:
   m_ObjectHideFlags: 0
@@ -31627,37 +31786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c542879b43669b746b87f85372f63aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paylines:
-  - {fileID: 8117719418779954618}
-  - {fileID: 3810060452813184042}
-  - {fileID: 31304126275343949}
-  - {fileID: 7229515656347310727}
-  - {fileID: 5091534728674748671}
-  - {fileID: 5179135207511655114}
-  - {fileID: 7002039715123156916}
-  - {fileID: 4151073609608061684}
-  - {fileID: 7260429952965733981}
-  - {fileID: 2788794292048767277}
-  - {fileID: 6593127145039672687}
-  - {fileID: 7198167613098072941}
-  - {fileID: 6125476163089650577}
-  - {fileID: 7894612744969505373}
-  - {fileID: 2993199169174354492}
-  - {fileID: 4479595549220081517}
-  - {fileID: 1062504194475398122}
-  - {fileID: 2233282229719119203}
-  - {fileID: 6445565566991355252}
-  - {fileID: 8192537101468922675}
-  - {fileID: 2701056880727940452}
-  - {fileID: 1210929458122973659}
-  - {fileID: 7434962318940254902}
-  - {fileID: 2518443819350111400}
-  - {fileID: 9068951470920266618}
-  - {fileID: 7538810119807025924}
-  - {fileID: 21868147438225314}
-  - {fileID: 6635550298004857685}
-  - {fileID: 3830884744408186757}
-  - {fileID: 9040972539966883768}
   _paylineAmountPrefab: {fileID: 5431219146205039411, guid: 424cfad788e23a14dacf9826755c8330, type: 3}
   TotalWinPanel: {fileID: 2772773782535517008}
   totalWinText: {fileID: 7633059784446821931}
@@ -31667,6 +31795,7 @@ MonoBehaviour:
   - {fileID: 1486120618224894317}
   - {fileID: 4938345008682235722}
   - {fileID: 278723959095314862}
+  _paylineAnimationHandler: {fileID: 1320350410}
 --- !u!1 &1669588612592749624
 GameObject:
   m_ObjectHideFlags: 0
@@ -38998,6 +39127,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2461586337962812098}
+  - {fileID: 1320350409}
   - {fileID: 5253071506694608537}
   - {fileID: 6529945643886941552}
   m_Father: {fileID: 53582723321960139}
@@ -40972,8 +41102,6 @@ MonoBehaviour:
   freeSpinOutrPopUp: {fileID: 659402321}
   SpinButton: {fileID: 5168001252428643248}
   BGImage: {fileID: 1588559373}
-  FreeSpinReelFrame: {fileID: 0}
-  BaseReelFrame: {fileID: 58261006533022301}
   FreeSpinTextNode: {fileID: 1384121968501632453}
   totalFreeSpinText: {fileID: 7629764036653240701}
   currentFreeSpinNode: {fileID: 1384121968501632453}

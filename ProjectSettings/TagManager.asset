@@ -47,3 +47,6 @@ TagManager:
   - name: GameplayPopups
     uniqueID: 3087580099
     locked: 0
+  - name: payline
+    uniqueID: 2520444037
+    locked: 0

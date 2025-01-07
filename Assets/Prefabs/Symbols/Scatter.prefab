@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spineGameObject: {fileID: 8080800001044069810}
-  startAnimation: idle
+  startAnimation: win
   isLooping: 1
 --- !u!114 &108678634706109691
 MonoBehaviour:

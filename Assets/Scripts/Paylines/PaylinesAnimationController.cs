@@ -21,30 +21,9 @@ public class PaylinesAnimationController : MonoBehaviour
             if (animationTrack != null)
             {
                 animationTrack.TimeScale = IsSpecialSymbol() ? 1f : 0f;
-                //Debug.Log("Spine if isAlreadyInAutoTurboMode 1st" + isAlreadyInAutoTurboMode + " " + SlotMachine.isInAutoTurboRound);
-                /*animationTrack.TimeScale = 0f; // Pause the animation
-                if (_symbolId == ReelManager.Instance.SystemSetting.ScatterId || _symbolId == ReelManager.Instance.SystemSetting.BonusId)
-                {
-                    animationTrack.TimeScale = 1f;
-                }*/
-
             }
         }
-
-        /* if (isAlreadyInAutoTurboMode)
-         {
-             if (animationTrack != null)
-             {
-                 Debug.Log("Spine if isAlreadyInAutoTurboMode 2nd" + isAlreadyInAutoTurboMode + " " + SlotMachine.isInAutoTurboRound);
-                 animationTrack.TimeScale = 0f; // Pause the animation
-             }
-         }
-         else
-         {
-             isAlreadyInAutoTurboMode = false;
-             Debug.Log("Spine if isAlreadyInAutoTurboMode 3nd" + isAlreadyInAutoTurboMode + " " + SlotMachine.isInAutoTurboRound);
-             //animationTrack.TimeScale = 1f;
-         }*/   
+  
 
     }
     private bool IsSpecialSymbol()
